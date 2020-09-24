@@ -1,0 +1,5 @@
+E:\Desktop\Thực tập nhóm\QLNhanSu\QLNhanSu\Model\bin\Debug\Model.dll
+E:\Desktop\Thực tập nhóm\QLNhanSu\QLNhanSu\Model\bin\Debug\Model.pdb
+E:\Desktop\Thực tập nhóm\QLNhanSu\QLNhanSu\Model\obj\Debug\DTO.csproj.CoreCompileInputs.cache
+E:\Desktop\Thực tập nhóm\QLNhanSu\QLNhanSu\Model\obj\Debug\Model.dll
+E:\Desktop\Thực tập nhóm\QLNhanSu\QLNhanSu\Model\obj\Debug\Model.pdb

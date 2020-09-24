@@ -1,0 +1,9 @@
+E:\Desktop\Thực tập nhóm\QLNhanSu\QLNhanSu\Controller\bin\Debug\Controller.dll
+E:\Desktop\Thực tập nhóm\QLNhanSu\QLNhanSu\Controller\bin\Debug\Controller.pdb
+E:\Desktop\Thực tập nhóm\QLNhanSu\QLNhanSu\Controller\bin\Debug\Model.dll
+E:\Desktop\Thực tập nhóm\QLNhanSu\QLNhanSu\Controller\bin\Debug\Model.pdb
+E:\Desktop\Thực tập nhóm\QLNhanSu\QLNhanSu\Controller\obj\Debug\DAO.csprojAssemblyReference.cache
+E:\Desktop\Thực tập nhóm\QLNhanSu\QLNhanSu\Controller\obj\Debug\DAO.csproj.CoreCompileInputs.cache
+E:\Desktop\Thực tập nhóm\QLNhanSu\QLNhanSu\Controller\obj\Debug\DAO.csproj.CopyComplete
+E:\Desktop\Thực tập nhóm\QLNhanSu\QLNhanSu\Controller\obj\Debug\Controller.dll
+E:\Desktop\Thực tập nhóm\QLNhanSu\QLNhanSu\Controller\obj\Debug\Controller.pdb

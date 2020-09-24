@@ -1,0 +1,9 @@
+E:\Desktop\Thực tập nhóm\QLNhanSu\QLNhanSu\BUS\bin\Debug\BUS.dll
+E:\Desktop\Thực tập nhóm\QLNhanSu\QLNhanSu\BUS\bin\Debug\BUS.pdb
+E:\Desktop\Thực tập nhóm\QLNhanSu\QLNhanSu\BUS\bin\Debug\Controller.dll
+E:\Desktop\Thực tập nhóm\QLNhanSu\QLNhanSu\BUS\bin\Debug\Controller.pdb
+E:\Desktop\Thực tập nhóm\QLNhanSu\QLNhanSu\BUS\obj\Debug\BUS.csprojAssemblyReference.cache
+E:\Desktop\Thực tập nhóm\QLNhanSu\QLNhanSu\BUS\obj\Debug\BUS.csproj.CoreCompileInputs.cache
+E:\Desktop\Thực tập nhóm\QLNhanSu\QLNhanSu\BUS\obj\Debug\BUS.csproj.CopyComplete
+E:\Desktop\Thực tập nhóm\QLNhanSu\QLNhanSu\BUS\obj\Debug\BUS.dll
+E:\Desktop\Thực tập nhóm\QLNhanSu\QLNhanSu\BUS\obj\Debug\BUS.pdb
