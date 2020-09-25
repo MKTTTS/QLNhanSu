@@ -16,5 +16,18 @@ namespace View
         {
             InitializeComponent();
         }
+
+        private void dangNhap_btn_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Form1 fm = new Form1();
+            fm.ShowDialog();
+            this.Close();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }
