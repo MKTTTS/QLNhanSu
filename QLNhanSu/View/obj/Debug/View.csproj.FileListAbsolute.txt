@@ -35,3 +35,4 @@ E:\Desktop\Thực tập nhóm\QLNhanSu\QLNhanSu\View\bin\Debug\Model.dll
 E:\Desktop\Thực tập nhóm\QLNhanSu\QLNhanSu\View\bin\Debug\BUS.pdb
 E:\Desktop\Thực tập nhóm\QLNhanSu\QLNhanSu\View\bin\Debug\Model.pdb
 E:\Desktop\Thực tập nhóm\QLNhanSu\QLNhanSu\View\obj\Debug\View.csproj.CopyComplete
+E:\Desktop\Thực tập nhóm\QLNhanSu\QLNhanSu\View\obj\Debug\View.Form1.resources
