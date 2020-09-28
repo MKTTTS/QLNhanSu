@@ -9,7 +9,7 @@ using System.Windows.Forms;
 
 namespace DAO
 {
-    class DataProvider
+    public class DataProvider
     {
         private static DataProvider _instance;
         public static DataProvider Instance
@@ -21,7 +21,7 @@ namespace DAO
             }
         }
 
-        public static string connectionString = @"Data Source=KIEN_HIP;Initial Catalog=QuanLyLichTiemChung;Integrated Security=True";
+        public static string connectionString = @"Data Source=KIEN_HIP;Initial Catalog=QuanLyNhanSu;Integrated Security=True";
         public static SqlConnection GetConnection()
         {
             SqlConnection conn = new SqlConnection(connectionString);
