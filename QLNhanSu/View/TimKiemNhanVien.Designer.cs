@@ -63,10 +63,10 @@
                this.cbxTieuChi.FormattingEnabled = true;
                this.cbxTieuChi.Items.AddRange(new object[] {
             "Chức Vụ",
+            "Mã Nhân Viên",
             "Bằng Cấp",
             "Phòng Ban",
             "Địa Chỉ",
-            "",
             ""});
                this.cbxTieuChi.Location = new System.Drawing.Point(223, 28);
                this.cbxTieuChi.Name = "cbxTieuChi";
@@ -95,13 +95,6 @@
                // cbxDeMuc
                // 
                this.cbxDeMuc.FormattingEnabled = true;
-               this.cbxDeMuc.Items.AddRange(new object[] {
-            "Chức Vụ",
-            "Bằng Cấp",
-            "Phòng Ban",
-            "Địa Chỉ",
-            "",
-            ""});
                this.cbxDeMuc.Location = new System.Drawing.Point(428, 28);
                this.cbxDeMuc.Name = "cbxDeMuc";
                this.cbxDeMuc.Size = new System.Drawing.Size(133, 21);
