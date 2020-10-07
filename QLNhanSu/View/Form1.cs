@@ -12,6 +12,8 @@ namespace View
 {
     public partial class Form1 : Form
     {
+        public static string current_user_id = "NV00000001";
+
         public Form1()
         {
             InitializeComponent();
@@ -93,6 +95,7 @@ namespace View
         private void btnTaiKhoan_Click(object sender, EventArgs e)
         {
             hideSubMenu();
+            openChildForm(new ThongTinTaiKhoan());
         }
         #region ToolsSubMenu
 
@@ -113,6 +116,9 @@ namespace View
 
 
         private Form activeForm = null;
+
+
+
         private void openChildForm(Form childForm)
         {
             if (activeForm != null) activeForm.Close();

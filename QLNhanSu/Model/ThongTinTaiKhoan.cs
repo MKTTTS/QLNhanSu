@@ -12,11 +12,11 @@ namespace DTO
         public DateTime NgaySinh { get; set; }
         public string GioiTinh { get; set; }
         public string DiaChi { get; set; }
-        public string PhongBan { get; set; }
-        public string ViTri { get; set; }
-        public string ChucVu { get; set; }
+        public string TenPB { get; set; }
+        public string TenVT { get; set; }
+        public string TenCV { get; set; }
         public string BangCap { get; set; }
-        public string Luong { get; set; }
+        public string TongLuong { get; set; }
         public string CMTND { get; set; }
         public string SDT { get; set; }
         public string DanToc { get; set; }

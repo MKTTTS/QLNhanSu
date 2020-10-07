@@ -175,6 +175,7 @@
       <DependentUpon>TrinhDoTiengAnh.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\DataSources\DTO.DTO_Login.datasource" />
+    <None Include="Properties\DataSources\DTO.ThongTinTaiKhoan.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

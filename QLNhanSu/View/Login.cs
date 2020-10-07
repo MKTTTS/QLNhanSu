@@ -20,12 +20,13 @@ namespace View
 
         private void dangNhap_btn_Click(object sender, EventArgs e)
         {
-            int check;
-            Int32.TryParse(BUS_Login.Instance.CheckLogin((Object)tenDangNhap_txb.Text, (Object)matKhau_txb.Text), out check);
-            if (check > 0)
+            string check;
+            check = BUS_Login.Instance.CheckLogin((Object)tenDangNhap_txb.Text, (Object)matKhau_txb.Text);
+            if (check != null)
             {
                 this.Hide();
                 Form1 fm = new Form1();
+                Form1.current_user_id = check;
                 fm.ShowDialog();
                 this.Close();
             }
