@@ -36,7 +36,7 @@ namespace View
 
         private void thongTinTaiKhoanDataGridView_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-
+            //nguyen van kien
         }
     }
 }

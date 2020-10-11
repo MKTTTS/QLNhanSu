@@ -22,3 +22,5 @@ begin
 	join LUONG as L on NV.MaNV = L.MaNV
 	where NV.MaNV = @MaNV
 end
+
+SP_LoadThongTinNhanVien @MaNV = N'NV00000001'
