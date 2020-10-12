@@ -38,6 +38,8 @@ namespace View
                     {
                          cbxDeMuc.Items.Add(dt.Rows[i]["TenCV"]);
                     }
+
+
                }
 
                if (cbxTieuChi.Text == "Bằng Cấp")
@@ -72,17 +74,41 @@ namespace View
                          cbxDeMuc.Items.Add(dt.Rows[i]["DiaChi"]);
                     }
                }
+          }
 
-               if (cbxTieuChi.Text == "Mã Nhân Viên")
+          private void btnTimKiemTieuChi_Click(object sender, EventArgs e)
+          {
+               /*Chức Vụ
+                 Bằng Cấp
+                 Phòng Ban
+                 Địa Chỉ*/
+               string conString = ConfigurationManager.ConnectionStrings["myconnection"].ConnectionString;
+               SqlConnection sqlCon = new SqlConnection(conString);
+
+
+               DataTable dt = new DataTable();
+               while (true)
                {
-                    SqlDataAdapter da = new SqlDataAdapter("SELECT * FROM NHANVIEN", sqlCon);
-                    da.Fill(dt);
-
-                    for (int i = 0; i < dt.Rows.Count; i++)
+                    if (cbxDeMuc.Text == "")
                     {
-                         cbxDeMuc.Items.Add(dt.Rows[i]["MaNV"]);
+                         MessageBox.Show("Điền đầy đủ thông tin");
+                         break;
+                    }
+
+                    if(cbxTieuChi.Text == "Phòng Ban")
+                    {
+                         sqlCon.Open();
+                         string qry_CV = "SELECT NV.MaNV,NV.HoTen FROM PHONGBAN AS PB, NHANVIEN AS NV where PB.TenPB = '" + cbxDeMuc.Text + "' and PB.MaPB = NV.MaPB";
+                         SqlDataAdapter da = new SqlDataAdapter(qry_CV, sqlCon);
+                         da.Fill(dt);
+                         dgvKetQua.DataSource = dt;
+                         sqlCon.Close();
+                         break;
                     }
                }
+               
+
+               
           }
      }
 }
