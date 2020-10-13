@@ -144,6 +144,7 @@
                this.cbMaNV.TabIndex = 11;
                this.cbMaNV.Text = "Mã Nhân Viên";
                this.cbMaNV.UseVisualStyleBackColor = true;
+               this.cbMaNV.CheckedChanged += new System.EventHandler(this.cbMaNV_CheckedChanged);
                // 
                // cbHoTen
                // 
@@ -154,6 +155,7 @@
                this.cbHoTen.TabIndex = 10;
                this.cbHoTen.Text = "Họ Tên";
                this.cbHoTen.UseVisualStyleBackColor = true;
+               this.cbHoTen.CheckedChanged += new System.EventHandler(this.cbHoTen_CheckedChanged);
                // 
                // txtMaNV
                // 

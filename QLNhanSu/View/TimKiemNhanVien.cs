@@ -127,10 +127,66 @@ namespace View
 
 
                     DataTable dt = new DataTable();
-                   
+                    if (cbHoTen.Checked && cbMaNV.Checked)
+                    {
+                         MessageBox.Show("Chỉ tìm theo tên hoặc theo mã nhân viên");
+                         break;
+                    }
+
+                    if(cbHoTen.Checked)
+                    {
+                         sqlCon.Open();
+
+                         string qry_Ten = "select MaNV,HoTen,SDT,DiaChi from NHANVIEN where HoTen like '%" + txtTen.Text + "%'";
+                         SqlDataAdapter da = new SqlDataAdapter(qry_Ten, sqlCon);
+                         da.Fill(dt);
+                         dgvKetQua.DataSource = dt;
+
+                         sqlCon.Close();
+                         break;
+                    }
+
+                    if (cbMaNV.Checked)
+                    {
+                         sqlCon.Open();
+
+                         string qry_MaNV = "select MaNV,HoTen,SDT,DiaChi from NHANVIEN where MaNV = '" + txtMaNV.Text + "'";
+                         SqlDataAdapter da = new SqlDataAdapter(qry_MaNV, sqlCon);
+                         da.Fill(dt);
+                         dgvKetQua.DataSource = dt;
+
+                         sqlCon.Close();
+                         break;
+                    }
                }
           }
 
           #endregion
+
+          private void cbHoTen_CheckedChanged(object sender, EventArgs e)
+          {
+               if (cbHoTen.Checked)
+               {
+                    txtMaNV.Enabled = false;
+                    txtTen.Enabled = true;
+               }
+               else
+               {
+                    txtTen.Enabled = false;
+               }
+          }
+
+          private void cbMaNV_CheckedChanged(object sender, EventArgs e)
+          {
+               if (cbMaNV.Checked)
+               {
+                    txtTen.Enabled = false;
+                    txtMaNV.Enabled = true;
+               }
+               else
+               {
+                    txtMaNV.Enabled = false;
+               }
+          }
      }
 }
