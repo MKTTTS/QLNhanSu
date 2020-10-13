@@ -17,7 +17,8 @@ namespace View
         public TimKiemNhanVien()
         {
             InitializeComponent();
-        }
+              
+          }
 
           private void cbxTieuChi_TextChanged(object sender, EventArgs e)
           {
@@ -28,19 +29,6 @@ namespace View
                sqlCon.Open();
 
                DataTable dt = new DataTable();
-
-               if(cbxTieuChi.Text=="Chức Vụ")
-               {
-                    SqlDataAdapter da = new SqlDataAdapter("SELECT * FROM CHUCVU",sqlCon);
-                    da.Fill(dt);
-
-                    for(int i = 0; i < dt.Rows.Count; i++)
-                    {
-                         cbxDeMuc.Items.Add(dt.Rows[i]["TenCV"]);
-                    }
-
-
-               }
 
                if (cbxTieuChi.Text == "Bằng Cấp")
                {
@@ -78,8 +66,7 @@ namespace View
 
           private void btnTimKiemTieuChi_Click(object sender, EventArgs e)
           {
-               /*Chức Vụ
-                 Bằng Cấp
+               /*Bằng Cấp
                  Phòng Ban
                  Địa Chỉ*/
                string conString = ConfigurationManager.ConnectionStrings["myconnection"].ConnectionString;
@@ -105,10 +92,45 @@ namespace View
                          sqlCon.Close();
                          break;
                     }
-               }
-               
 
-               
+                    if (cbxTieuChi.Text == "Bằng Cấp")
+                    {
+                         sqlCon.Open();
+                         string qry_BC = "SELECT * FROM NHANVIEN where BangCap='" + cbxDeMuc.Text + "'";
+                         SqlDataAdapter da = new SqlDataAdapter(qry_BC, sqlCon);
+                         da.Fill(dt);
+                         dgvKetQua.DataSource = dt;
+                         sqlCon.Close();
+                         break;
+                    }
+
+                    if (cbxTieuChi.Text == "Địa Chỉ")
+                    {
+                         sqlCon.Open();
+                         string qry_DC = "SELECT * FROM NHANVIEN where BangCap='" + cbxDeMuc.Text + "'";
+                         SqlDataAdapter da = new SqlDataAdapter(qry_DC, sqlCon);
+                         da.Fill(dt);
+                         dgvKetQua.DataSource = dt;
+                         sqlCon.Close();
+                         break;
+                    }
+               }
           }
+          #region tìm kiếm theo tên
+
+          private void btnTKTenMaNV_Click(object sender, EventArgs e)
+          {
+               while (true)
+               {
+                    string conString = ConfigurationManager.ConnectionStrings["myconnection"].ConnectionString;
+                    SqlConnection sqlCon = new SqlConnection(conString);
+
+
+                    DataTable dt = new DataTable();
+                   
+               }
+          }
+
+          #endregion
      }
 }

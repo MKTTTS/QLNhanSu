@@ -34,13 +34,13 @@
                this.btnTKTieuChi = new System.Windows.Forms.Button();
                this.label2 = new System.Windows.Forms.Label();
                this.groupBox1 = new System.Windows.Forms.GroupBox();
+               this.cbxDeMuc = new System.Windows.Forms.ComboBox();
                this.groupBox2 = new System.Windows.Forms.GroupBox();
+               this.cbMaNV = new System.Windows.Forms.CheckBox();
+               this.cbHoTen = new System.Windows.Forms.CheckBox();
+               this.txtMaNV = new System.Windows.Forms.TextBox();
                this.txtTen = new System.Windows.Forms.TextBox();
                this.btnTKTenMaNV = new System.Windows.Forms.Button();
-               this.cbxDeMuc = new System.Windows.Forms.ComboBox();
-               this.textBox1 = new System.Windows.Forms.TextBox();
-               this.cbHoTen = new System.Windows.Forms.CheckBox();
-               this.cbMaNV = new System.Windows.Forms.CheckBox();
                ((System.ComponentModel.ISupportInitialize)(this.dgvKetQua)).BeginInit();
                this.groupBox1.SuspendLayout();
                this.groupBox2.SuspendLayout();
@@ -70,7 +70,6 @@
                // 
                this.cbxTieuChi.FormattingEnabled = true;
                this.cbxTieuChi.Items.AddRange(new object[] {
-            "Chức Vụ",
             "Bằng Cấp",
             "Phòng Ban",
             "Địa Chỉ"});
@@ -113,11 +112,20 @@
                this.groupBox1.TabStop = false;
                this.groupBox1.Text = "Theo Các Tiêu Chí";
                // 
+               // cbxDeMuc
+               // 
+               this.cbxDeMuc.FormattingEnabled = true;
+               this.cbxDeMuc.IntegralHeight = false;
+               this.cbxDeMuc.Location = new System.Drawing.Point(101, 71);
+               this.cbxDeMuc.Name = "cbxDeMuc";
+               this.cbxDeMuc.Size = new System.Drawing.Size(109, 21);
+               this.cbxDeMuc.TabIndex = 8;
+               // 
                // groupBox2
                // 
                this.groupBox2.Controls.Add(this.cbMaNV);
                this.groupBox2.Controls.Add(this.cbHoTen);
-               this.groupBox2.Controls.Add(this.textBox1);
+               this.groupBox2.Controls.Add(this.txtMaNV);
                this.groupBox2.Controls.Add(this.txtTen);
                this.groupBox2.Controls.Add(this.btnTKTenMaNV);
                this.groupBox2.Location = new System.Drawing.Point(415, 12);
@@ -126,6 +134,35 @@
                this.groupBox2.TabIndex = 10;
                this.groupBox2.TabStop = false;
                this.groupBox2.Text = "Theo Tên";
+               // 
+               // cbMaNV
+               // 
+               this.cbMaNV.AutoSize = true;
+               this.cbMaNV.Location = new System.Drawing.Point(17, 73);
+               this.cbMaNV.Name = "cbMaNV";
+               this.cbMaNV.Size = new System.Drawing.Size(94, 17);
+               this.cbMaNV.TabIndex = 11;
+               this.cbMaNV.Text = "Mã Nhân Viên";
+               this.cbMaNV.UseVisualStyleBackColor = true;
+               // 
+               // cbHoTen
+               // 
+               this.cbHoTen.AutoSize = true;
+               this.cbHoTen.Location = new System.Drawing.Point(17, 40);
+               this.cbHoTen.Name = "cbHoTen";
+               this.cbHoTen.Size = new System.Drawing.Size(62, 17);
+               this.cbHoTen.TabIndex = 10;
+               this.cbHoTen.Text = "Họ Tên";
+               this.cbHoTen.UseVisualStyleBackColor = true;
+               // 
+               // txtMaNV
+               // 
+               this.txtMaNV.Enabled = false;
+               this.txtMaNV.Location = new System.Drawing.Point(117, 71);
+               this.txtMaNV.Multiline = true;
+               this.txtMaNV.Name = "txtMaNV";
+               this.txtMaNV.Size = new System.Drawing.Size(130, 21);
+               this.txtMaNV.TabIndex = 9;
                // 
                // txtTen
                // 
@@ -144,44 +181,7 @@
                this.btnTKTenMaNV.TabIndex = 5;
                this.btnTKTenMaNV.Text = "Tìm Kiếm";
                this.btnTKTenMaNV.UseVisualStyleBackColor = true;
-               // 
-               // cbxDeMuc
-               // 
-               this.cbxDeMuc.FormattingEnabled = true;
-               this.cbxDeMuc.IntegralHeight = false;
-               this.cbxDeMuc.Location = new System.Drawing.Point(101, 71);
-               this.cbxDeMuc.Name = "cbxDeMuc";
-               this.cbxDeMuc.Size = new System.Drawing.Size(109, 21);
-               this.cbxDeMuc.TabIndex = 8;
-               // 
-               // textBox1
-               // 
-               this.textBox1.Enabled = false;
-               this.textBox1.Location = new System.Drawing.Point(117, 71);
-               this.textBox1.Multiline = true;
-               this.textBox1.Name = "textBox1";
-               this.textBox1.Size = new System.Drawing.Size(130, 21);
-               this.textBox1.TabIndex = 9;
-               // 
-               // cbHoTen
-               // 
-               this.cbHoTen.AutoSize = true;
-               this.cbHoTen.Location = new System.Drawing.Point(17, 40);
-               this.cbHoTen.Name = "cbHoTen";
-               this.cbHoTen.Size = new System.Drawing.Size(62, 17);
-               this.cbHoTen.TabIndex = 10;
-               this.cbHoTen.Text = "Họ Tên";
-               this.cbHoTen.UseVisualStyleBackColor = true;
-               // 
-               // cbMaNV
-               // 
-               this.cbMaNV.AutoSize = true;
-               this.cbMaNV.Location = new System.Drawing.Point(17, 73);
-               this.cbMaNV.Name = "cbMaNV";
-               this.cbMaNV.Size = new System.Drawing.Size(94, 17);
-               this.cbMaNV.TabIndex = 11;
-               this.cbMaNV.Text = "Mã Nhân Viên";
-               this.cbMaNV.UseVisualStyleBackColor = true;
+               this.btnTKTenMaNV.Click += new System.EventHandler(this.btnTKTenMaNV_Click);
                // 
                // TimKiemNhanVien
                // 
@@ -215,7 +215,7 @@
           private System.Windows.Forms.TextBox txtTen;
           private System.Windows.Forms.Button btnTKTenMaNV;
           private System.Windows.Forms.CheckBox cbHoTen;
-          private System.Windows.Forms.TextBox textBox1;
+          private System.Windows.Forms.TextBox txtMaNV;
           private System.Windows.Forms.CheckBox cbMaNV;
           private System.Windows.Forms.ComboBox cbxDeMuc;
      }
