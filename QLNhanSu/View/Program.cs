@@ -16,11 +16,7 @@ namespace View
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-<<<<<<< HEAD
             Application.Run(new Form1());
-=======
-            Application.Run(new TimKiemNhanVien());
->>>>>>> de02818204295cf77534cb74b3ed583944ae295b
         }
     }
 }
