@@ -17,7 +17,8 @@ namespace View
         public TimKiemNhanVien()
         {
             InitializeComponent();
-        }
+              
+          }
 
           private void cbxTieuChi_TextChanged(object sender, EventArgs e)
           {
@@ -28,17 +29,6 @@ namespace View
                sqlCon.Open();
 
                DataTable dt = new DataTable();
-
-               if(cbxTieuChi.Text=="Chức Vụ")
-               {
-                    SqlDataAdapter da = new SqlDataAdapter("SELECT * FROM CHUCVU",sqlCon);
-                    da.Fill(dt);
-
-                    for(int i = 0; i < dt.Rows.Count; i++)
-                    {
-                         cbxDeMuc.Items.Add(dt.Rows[i]["TenCV"]);
-                    }
-               }
 
                if (cbxTieuChi.Text == "Bằng Cấp")
                {
@@ -72,16 +62,130 @@ namespace View
                          cbxDeMuc.Items.Add(dt.Rows[i]["DiaChi"]);
                     }
                }
+          }
 
-               if (cbxTieuChi.Text == "Mã Nhân Viên")
+          private void btnTimKiemTieuChi_Click(object sender, EventArgs e)
+          {
+               /*Bằng Cấp
+                 Phòng Ban
+                 Địa Chỉ*/
+               string conString = ConfigurationManager.ConnectionStrings["myconnection"].ConnectionString;
+               SqlConnection sqlCon = new SqlConnection(conString);
+
+
+               DataTable dt = new DataTable();
+               while (true)
                {
-                    SqlDataAdapter da = new SqlDataAdapter("SELECT * FROM NHANVIEN", sqlCon);
-                    da.Fill(dt);
-
-                    for (int i = 0; i < dt.Rows.Count; i++)
+                    if (cbxDeMuc.Text == "")
                     {
-                         cbxDeMuc.Items.Add(dt.Rows[i]["MaNV"]);
+                         MessageBox.Show("Điền đầy đủ thông tin");
+                         break;
                     }
+
+                    if(cbxTieuChi.Text == "Phòng Ban")
+                    {
+                         sqlCon.Open();
+                         string qry_CV = "SELECT NV.MaNV,NV.HoTen FROM PHONGBAN AS PB, NHANVIEN AS NV where PB.TenPB = '" + cbxDeMuc.Text + "' and PB.MaPB = NV.MaPB";
+                         SqlDataAdapter da = new SqlDataAdapter(qry_CV, sqlCon);
+                         da.Fill(dt);
+                         dgvKetQua.DataSource = dt;
+                         sqlCon.Close();
+                         break;
+                    }
+
+                    if (cbxTieuChi.Text == "Bằng Cấp")
+                    {
+                         sqlCon.Open();
+                         string qry_BC = "SELECT * FROM NHANVIEN where BangCap='" + cbxDeMuc.Text + "'";
+                         SqlDataAdapter da = new SqlDataAdapter(qry_BC, sqlCon);
+                         da.Fill(dt);
+                         dgvKetQua.DataSource = dt;
+                         sqlCon.Close();
+                         break;
+                    }
+
+                    if (cbxTieuChi.Text == "Địa Chỉ")
+                    {
+                         sqlCon.Open();
+                         string qry_DC = "SELECT * FROM NHANVIEN where BangCap='" + cbxDeMuc.Text + "'";
+                         SqlDataAdapter da = new SqlDataAdapter(qry_DC, sqlCon);
+                         da.Fill(dt);
+                         dgvKetQua.DataSource = dt;
+                         sqlCon.Close();
+                         break;
+                    }
+               }
+          }
+          #region tìm kiếm theo tên
+
+          private void btnTKTenMaNV_Click(object sender, EventArgs e)
+          {
+               while (true)
+               {
+                    string conString = ConfigurationManager.ConnectionStrings["myconnection"].ConnectionString;
+                    SqlConnection sqlCon = new SqlConnection(conString);
+
+
+                    DataTable dt = new DataTable();
+                    if (cbHoTen.Checked && cbMaNV.Checked)
+                    {
+                         MessageBox.Show("Chỉ tìm theo tên hoặc theo mã nhân viên");
+                         break;
+                    }
+
+                    if(cbHoTen.Checked)
+                    {
+                         sqlCon.Open();
+
+                         string qry_Ten = "select MaNV,HoTen,SDT,DiaChi from NHANVIEN where HoTen like '%" + txtTen.Text + "%'";
+                         SqlDataAdapter da = new SqlDataAdapter(qry_Ten, sqlCon);
+                         da.Fill(dt);
+                         dgvKetQua.DataSource = dt;
+
+                         sqlCon.Close();
+                         break;
+                    }
+
+                    if (cbMaNV.Checked)
+                    {
+                         sqlCon.Open();
+
+                         string qry_MaNV = "select MaNV,HoTen,SDT,DiaChi from NHANVIEN where MaNV = '" + txtMaNV.Text + "'";
+                         SqlDataAdapter da = new SqlDataAdapter(qry_MaNV, sqlCon);
+                         da.Fill(dt);
+                         dgvKetQua.DataSource = dt;
+
+                         sqlCon.Close();
+                         break;
+                    }
+               }
+          }
+
+          #endregion
+
+          private void cbHoTen_CheckedChanged(object sender, EventArgs e)
+          {
+               if (cbHoTen.Checked)
+               {
+                    txtMaNV.Enabled = false;
+                    txtTen.Enabled = true;
+               }
+               else
+               {
+                    txtTen.Enabled = false;
+               }
+          }
+
+          private void cbMaNV_CheckedChanged(object sender, EventArgs e)
+          {
+               if (cbMaNV.Checked)
+               {
+                    txtTen.Enabled = false;
+                    txtMaNV.Enabled = true;
+               }
+               else
+               {
+                    txtMaNV.Enabled = false;
                }
           }
      }
