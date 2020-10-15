@@ -85,7 +85,7 @@ namespace View
                     if(cbxTieuChi.Text == "Phòng Ban")
                     {
                          sqlCon.Open();
-                         string qry_CV = "SELECT NV.MaNV,NV.HoTen FROM PHONGBAN AS PB, NHANVIEN AS NV where PB.TenPB = '" + cbxDeMuc.Text + "' and PB.MaPB = NV.MaPB";
+                         string qry_CV = "SELECT NV.MaNV,NV.HoTen FROM PHONGBAN AS PB, NHANVIEN AS NV where PB.TenPB = N'" + cbxDeMuc.Text + "' and PB.MaPB = NV.MaPB";
                          SqlDataAdapter da = new SqlDataAdapter(qry_CV, sqlCon);
                          da.Fill(dt);
                          dgvKetQua.DataSource = dt;
@@ -96,7 +96,7 @@ namespace View
                     if (cbxTieuChi.Text == "Bằng Cấp")
                     {
                          sqlCon.Open();
-                         string qry_BC = "SELECT * FROM NHANVIEN where BangCap='" + cbxDeMuc.Text + "'";
+                         string qry_BC = "SELECT * FROM NHANVIEN where BangCap=N'" + cbxDeMuc.Text + "'";
                          SqlDataAdapter da = new SqlDataAdapter(qry_BC, sqlCon);
                          da.Fill(dt);
                          dgvKetQua.DataSource = dt;
@@ -107,7 +107,7 @@ namespace View
                     if (cbxTieuChi.Text == "Địa Chỉ")
                     {
                          sqlCon.Open();
-                         string qry_DC = "SELECT * FROM NHANVIEN where BangCap='" + cbxDeMuc.Text + "'";
+                         string qry_DC = "SELECT * FROM NHANVIEN where DiaChi=N'" + cbxDeMuc.Text + "'";
                          SqlDataAdapter da = new SqlDataAdapter(qry_DC, sqlCon);
                          da.Fill(dt);
                          dgvKetQua.DataSource = dt;
