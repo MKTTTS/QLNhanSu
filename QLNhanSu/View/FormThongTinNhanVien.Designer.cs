@@ -34,6 +34,7 @@
             this.buttonTimkiem = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvKetQua)).BeginInit();
             this.SuspendLayout();
             // 
@@ -43,7 +44,7 @@
             this.dgvKetQua.AllowUserToDeleteRows = false;
             this.dgvKetQua.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvKetQua.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvKetQua.Location = new System.Drawing.Point(102, 174);
+            this.dgvKetQua.Location = new System.Drawing.Point(84, 120);
             this.dgvKetQua.MultiSelect = false;
             this.dgvKetQua.Name = "dgvKetQua";
             this.dgvKetQua.ReadOnly = true;
@@ -62,7 +63,7 @@
             this.buttonThoat.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.buttonThoat.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonThoat.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.buttonThoat.Location = new System.Drawing.Point(797, 72);
+            this.buttonThoat.Location = new System.Drawing.Point(789, 45);
             this.buttonThoat.Name = "buttonThoat";
             this.buttonThoat.Size = new System.Drawing.Size(165, 51);
             this.buttonThoat.TabIndex = 26;
@@ -74,7 +75,7 @@
             // 
             this.textBoxTimkiem.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxTimkiem.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.textBoxTimkiem.Location = new System.Drawing.Point(253, 80);
+            this.textBoxTimkiem.Location = new System.Drawing.Point(245, 53);
             this.textBoxTimkiem.Name = "textBoxTimkiem";
             this.textBoxTimkiem.Size = new System.Drawing.Size(305, 34);
             this.textBoxTimkiem.TabIndex = 24;
@@ -87,7 +88,7 @@
             this.buttonTimkiem.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.buttonTimkiem.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonTimkiem.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.buttonTimkiem.Location = new System.Drawing.Point(609, 72);
+            this.buttonTimkiem.Location = new System.Drawing.Point(601, 45);
             this.buttonTimkiem.Name = "buttonTimkiem";
             this.buttonTimkiem.Size = new System.Drawing.Size(165, 51);
             this.buttonTimkiem.TabIndex = 23;
@@ -101,7 +102,7 @@
             this.label4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
             this.label4.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label4.Location = new System.Drawing.Point(113, 85);
+            this.label4.Location = new System.Drawing.Point(105, 58);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(103, 24);
             this.label4.TabIndex = 22;
@@ -120,12 +121,30 @@
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button2_Click);
             // 
+            // button2
+            // 
+            this.button2.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.button2.BackColor = System.Drawing.Color.Lime;
+            this.button2.FlatAppearance.BorderColor = System.Drawing.Color.Lime;
+            this.button2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.ForeColor = System.Drawing.Color.Red;
+            this.button2.Location = new System.Drawing.Point(159, 552);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(264, 86);
+            this.button2.TabIndex = 28;
+            this.button2.Text = "THÊM NHÂN VIÊN";
+            this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click_1);
+            // 
             // FormThongTinNhanVien
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
             this.ClientSize = new System.Drawing.Size(1124, 666);
+            this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.buttonThoat);
             this.Controls.Add(this.textBoxTimkiem);
@@ -149,5 +168,6 @@
         private System.Windows.Forms.Button buttonTimkiem;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button2;
     }
 }

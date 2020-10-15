@@ -54,5 +54,11 @@ namespace View
                 LoadAgain();
             }
         }
+
+        private void button2_Click_1(object sender, EventArgs e)
+        {
+            FormThemNhanVien them = new FormThemNhanVien();
+            them.ShowDialog();
+        }
     }
 }

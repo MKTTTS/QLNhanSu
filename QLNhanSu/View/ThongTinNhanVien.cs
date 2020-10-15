@@ -31,6 +31,8 @@ namespace View
             this.textBoxBangCap.Enabled = false;
             this.comboBoxPhongBan.Enabled = false;
             this.comboBoxViTri.Enabled = false;
+            this.textBoxdantoc.Enabled = false;
+            this.textBoxtongiao.Enabled = false;
          
         }
 
@@ -46,6 +48,8 @@ namespace View
             //maskedTextBoxNgayvaolam.Text = r["NgayVaoLam"].ToString();
             comboBoxGioitinh.Text = r["GioiTinh"].ToString();
             textBoxBangCap.Text = r["BangCap"].ToString();
+            this.textBoxtongiao.Text = r["TonGiao"].ToString();
+            this.textBoxdantoc.Text = r["DanToc"].ToString();
             this.mnv = mnv;
             string conString = ConfigurationManager.ConnectionStrings["myconnection"].ConnectionString;
             SqlConnection sqlCon = new SqlConnection(conString);
@@ -82,7 +86,7 @@ namespace View
             }
 
             comboBoxViTri.Text = r["TenVT"].ToString();
-
+            comboBoxViTri.Items.Add("Không");
             sqlCon.Close();
         }
 
@@ -103,6 +107,8 @@ namespace View
             this.textBoxBangCap.Enabled = true;
             this.comboBoxPhongBan.Enabled = true;
             this.comboBoxViTri.Enabled = true;
+            this.textBoxdantoc.Enabled = true;
+            this.textBoxtongiao.Enabled = true;
 
         }
 
@@ -151,6 +157,19 @@ namespace View
                 this.Dispose();
 
             }
+        }
+
+        private void buttonXoa_Click(object sender, EventArgs e)
+        {
+            XoaNhanVien xoa = new XoaNhanVien(mnv);
+            xoa.ShowDialog();
+            this.Dispose();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Hopdong hd = new Hopdong(mnv);
+            hd.ShowDialog();
         }
     }
 }

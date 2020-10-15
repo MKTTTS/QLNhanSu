@@ -56,6 +56,10 @@
             this.label11 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
+            this.textBoxtongiao = new System.Windows.Forms.TextBox();
+            this.textBoxdantoc = new System.Windows.Forms.TextBox();
+            this.label12 = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // maskedTextBoxNgaysinh
@@ -158,7 +162,7 @@
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.label7.Location = new System.Drawing.Point(410, 365);
+            this.label7.Location = new System.Drawing.Point(410, 461);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(87, 19);
             this.label7.TabIndex = 55;
@@ -225,12 +229,13 @@
             this.buttonXoa.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.buttonXoa.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonXoa.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.buttonXoa.Location = new System.Drawing.Point(533, 591);
+            this.buttonXoa.Location = new System.Drawing.Point(591, 656);
             this.buttonXoa.Name = "buttonXoa";
             this.buttonXoa.Size = new System.Drawing.Size(208, 105);
             this.buttonXoa.TabIndex = 70;
             this.buttonXoa.Text = "XÓA";
             this.buttonXoa.UseVisualStyleBackColor = false;
+            this.buttonXoa.Click += new System.EventHandler(this.buttonXoa_Click);
             // 
             // buttontExit
             // 
@@ -238,7 +243,7 @@
             this.buttontExit.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.buttontExit.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttontExit.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.buttontExit.Location = new System.Drawing.Point(975, 591);
+            this.buttontExit.Location = new System.Drawing.Point(1035, 656);
             this.buttontExit.Name = "buttontExit";
             this.buttontExit.Size = new System.Drawing.Size(208, 105);
             this.buttontExit.TabIndex = 69;
@@ -252,7 +257,7 @@
             this.buttonLuu.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.buttonLuu.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonLuu.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.buttonLuu.Location = new System.Drawing.Point(312, 591);
+            this.buttonLuu.Location = new System.Drawing.Point(369, 656);
             this.buttonLuu.Name = "buttonLuu";
             this.buttonLuu.Size = new System.Drawing.Size(208, 105);
             this.buttonLuu.TabIndex = 68;
@@ -266,7 +271,7 @@
             this.buttonSua.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.buttonSua.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonSua.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.buttonSua.Location = new System.Drawing.Point(91, 591);
+            this.buttonSua.Location = new System.Drawing.Point(147, 656);
             this.buttonSua.Name = "buttonSua";
             this.buttonSua.Size = new System.Drawing.Size(208, 105);
             this.buttonSua.TabIndex = 67;
@@ -284,7 +289,7 @@
             this.comboboxChucVu.Items.AddRange(new object[] {
             "Nam",
             "Nữ"});
-            this.comboboxChucVu.Location = new System.Drawing.Point(611, 356);
+            this.comboboxChucVu.Location = new System.Drawing.Point(611, 452);
             this.comboboxChucVu.Name = "comboboxChucVu";
             this.comboboxChucVu.Size = new System.Drawing.Size(344, 32);
             this.comboboxChucVu.TabIndex = 71;
@@ -293,7 +298,7 @@
             // 
             this.textBoxBangCap.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxBangCap.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.textBoxBangCap.Location = new System.Drawing.Point(611, 404);
+            this.textBoxBangCap.Location = new System.Drawing.Point(611, 500);
             this.textBoxBangCap.Name = "textBoxBangCap";
             this.textBoxBangCap.Size = new System.Drawing.Size(344, 30);
             this.textBoxBangCap.TabIndex = 73;
@@ -303,7 +308,7 @@
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.label6.Location = new System.Drawing.Point(410, 413);
+            this.label6.Location = new System.Drawing.Point(410, 509);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(96, 19);
             this.label6.TabIndex = 72;
@@ -316,7 +321,7 @@
             this.comboBoxPhongBan.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBoxPhongBan.ForeColor = System.Drawing.SystemColors.Desktop;
             this.comboBoxPhongBan.FormattingEnabled = true;
-            this.comboBoxPhongBan.Location = new System.Drawing.Point(611, 450);
+            this.comboBoxPhongBan.Location = new System.Drawing.Point(611, 546);
             this.comboBoxPhongBan.Name = "comboBoxPhongBan";
             this.comboBoxPhongBan.Size = new System.Drawing.Size(344, 32);
             this.comboBoxPhongBan.TabIndex = 75;
@@ -326,7 +331,7 @@
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.label10.Location = new System.Drawing.Point(410, 459);
+            this.label10.Location = new System.Drawing.Point(410, 555);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(110, 19);
             this.label10.TabIndex = 74;
@@ -339,7 +344,7 @@
             this.comboBoxViTri.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBoxViTri.ForeColor = System.Drawing.SystemColors.Desktop;
             this.comboBoxViTri.FormattingEnabled = true;
-            this.comboBoxViTri.Location = new System.Drawing.Point(611, 498);
+            this.comboBoxViTri.Location = new System.Drawing.Point(611, 594);
             this.comboBoxViTri.Name = "comboBoxViTri";
             this.comboBoxViTri.Size = new System.Drawing.Size(344, 32);
             this.comboBoxViTri.TabIndex = 77;
@@ -349,7 +354,7 @@
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label11.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.label11.Location = new System.Drawing.Point(410, 507);
+            this.label11.Location = new System.Drawing.Point(410, 603);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(153, 19);
             this.label11.TabIndex = 76;
@@ -361,18 +366,19 @@
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button1.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button1.Location = new System.Drawing.Point(754, 591);
+            this.button1.Location = new System.Drawing.Point(813, 656);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(208, 105);
             this.button1.TabIndex = 78;
             this.button1.Text = "HỢP ĐỒNG";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.button2.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(1259, 13);
+            this.button2.Location = new System.Drawing.Point(1297, 12);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(43, 44);
             this.button2.TabIndex = 79;
@@ -380,12 +386,57 @@
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.buttontExit_Click);
             // 
+            // textBoxtongiao
+            // 
+            this.textBoxtongiao.Enabled = false;
+            this.textBoxtongiao.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxtongiao.ForeColor = System.Drawing.SystemColors.Desktop;
+            this.textBoxtongiao.Location = new System.Drawing.Point(611, 405);
+            this.textBoxtongiao.Name = "textBoxtongiao";
+            this.textBoxtongiao.Size = new System.Drawing.Size(344, 30);
+            this.textBoxtongiao.TabIndex = 83;
+            // 
+            // textBoxdantoc
+            // 
+            this.textBoxdantoc.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxdantoc.ForeColor = System.Drawing.SystemColors.Desktop;
+            this.textBoxdantoc.Location = new System.Drawing.Point(611, 359);
+            this.textBoxdantoc.Name = "textBoxdantoc";
+            this.textBoxdantoc.Size = new System.Drawing.Size(344, 30);
+            this.textBoxdantoc.TabIndex = 82;
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.ForeColor = System.Drawing.SystemColors.Desktop;
+            this.label12.Location = new System.Drawing.Point(410, 414);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(90, 19);
+            this.label12.TabIndex = 81;
+            this.label12.Text = "TÔN GIÁO";
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.ForeColor = System.Drawing.SystemColors.Desktop;
+            this.label13.Location = new System.Drawing.Point(410, 368);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(84, 19);
+            this.label13.TabIndex = 80;
+            this.label13.Text = "DÂN TỘC";
+            // 
             // ThongTinNhanVien
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
-            this.ClientSize = new System.Drawing.Size(1314, 800);
+            this.ClientSize = new System.Drawing.Size(1352, 800);
+            this.Controls.Add(this.textBoxtongiao);
+            this.Controls.Add(this.textBoxdantoc);
+            this.Controls.Add(this.label12);
+            this.Controls.Add(this.label13);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.comboBoxViTri);
@@ -454,5 +505,9 @@
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.TextBox textBoxtongiao;
+        private System.Windows.Forms.TextBox textBoxdantoc;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Label label13;
     }
 }
