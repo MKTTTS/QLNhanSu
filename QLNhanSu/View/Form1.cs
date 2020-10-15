@@ -52,11 +52,14 @@ namespace View
         private void btnThongTinNhanVien_Click(object sender, EventArgs e)
         {
             hideSubMenu();
+
         }
 
         private void btnTimKiem_Click(object sender, EventArgs e)
         {
             hideSubMenu();
+               TimKiemNhanVien tknv = new TimKiemNhanVien();
+               openChildForm(tknv);
         }
         #endregion
 
