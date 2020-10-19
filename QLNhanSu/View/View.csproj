@@ -60,6 +60,7 @@
     <Compile Include="DanToc.Designer.cs">
       <DependentUpon>DanToc.cs</DependentUpon>
     </Compile>
+    <Compile Include="DataProvider.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -104,6 +105,7 @@
     <Compile Include="ThongTinTaiKhoan.Designer.cs">
       <DependentUpon>ThongTinTaiKhoan.cs</DependentUpon>
     </Compile>
+    <Compile Include="TimKiem.cs" />
     <Compile Include="TimKiemNhanVien.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -177,6 +179,7 @@
       <DependentUpon>TrinhDoTiengAnh.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\DataSources\DTO.DTO_Login.datasource" />
+    <None Include="Properties\DataSources\DTO.PhongBan.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

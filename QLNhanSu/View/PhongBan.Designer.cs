@@ -28,169 +28,231 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.TenTP = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.tenPB = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.btXoa = new System.Windows.Forms.Button();
+            this.components = new System.ComponentModel.Container();
             this.btSua = new System.Windows.Forms.Button();
             this.btThem = new System.Windows.Forms.Button();
-            this.maPB = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.maTP = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.btSearch = new System.Windows.Forms.Button();
-            this.lbTenTp = new System.Windows.Forms.Label();
-            this.lbTenPB = new System.Windows.Forms.Label();
-            this.lbMPB = new System.Windows.Forms.Label();
+            this.phongBanDataGridView = new System.Windows.Forms.DataGridView();
+            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.phongBanBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.lbQLPB = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.dIACHITextBox = new System.Windows.Forms.TextBox();
+            this.button1 = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.mAPBTextBox = new System.Windows.Forms.TextBox();
+            this.mATPTextBox = new System.Windows.Forms.TextBox();
+            this.tENPBTextBox = new System.Windows.Forms.TextBox();
+            this.tENTPTextBox = new System.Windows.Forms.TextBox();
+            this.lbTenTp = new System.Windows.Forms.Label();
+            this.lbTenPB = new System.Windows.Forms.Label();
             this.lbMaTP = new System.Windows.Forms.Label();
+            this.lbMPB = new System.Windows.Forms.Label();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.button2 = new System.Windows.Forms.Button();
             this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.phongBanDataGridView)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.phongBanBindingSource)).BeginInit();
             this.panel1.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // TenTP
-            // 
-            this.TenTP.HeaderText = "Tên Trưởng phòng";
-            this.TenTP.MinimumWidth = 6;
-            this.TenTP.Name = "TenTP";
-            this.TenTP.Width = 200;
-            // 
-            // tenPB
-            // 
-            this.tenPB.HeaderText = "Tên Phòng ban";
-            this.tenPB.MinimumWidth = 6;
-            this.tenPB.Name = "tenPB";
-            this.tenPB.Width = 200;
-            // 
-            // textBox5
-            // 
-            this.textBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox5.Location = new System.Drawing.Point(214, 253);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(210, 27);
-            this.textBox5.TabIndex = 13;
-            // 
-            // textBox4
-            // 
-            this.textBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox4.Location = new System.Drawing.Point(638, 170);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(219, 27);
-            this.textBox4.TabIndex = 12;
-            // 
-            // textBox3
-            // 
-            this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.Location = new System.Drawing.Point(165, 170);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(210, 27);
-            this.textBox3.TabIndex = 11;
-            // 
-            // textBox2
-            // 
-            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(638, 104);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(219, 27);
-            this.textBox2.TabIndex = 10;
-            // 
-            // textBox1
-            // 
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(165, 101);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(210, 27);
-            this.textBox1.TabIndex = 9;
-            // 
-            // btXoa
-            // 
-            this.btXoa.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btXoa.Location = new System.Drawing.Point(782, 253);
-            this.btXoa.Name = "btXoa";
-            this.btXoa.Size = new System.Drawing.Size(75, 27);
-            this.btXoa.TabIndex = 8;
-            this.btXoa.Text = "Xóa";
-            this.btXoa.UseVisualStyleBackColor = true;
-            // 
             // btSua
             // 
             this.btSua.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btSua.Location = new System.Drawing.Point(656, 253);
+            this.btSua.Location = new System.Drawing.Point(733, 254);
             this.btSua.Name = "btSua";
-            this.btSua.Size = new System.Drawing.Size(75, 27);
+            this.btSua.Size = new System.Drawing.Size(81, 38);
             this.btSua.TabIndex = 7;
             this.btSua.Text = "Sửa";
             this.btSua.UseVisualStyleBackColor = true;
+            this.btSua.Click += new System.EventHandler(this.btSua_Click);
             // 
             // btThem
             // 
             this.btThem.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btThem.Location = new System.Drawing.Point(538, 253);
+            this.btThem.Location = new System.Drawing.Point(493, 251);
             this.btThem.Name = "btThem";
-            this.btThem.Size = new System.Drawing.Size(75, 27);
+            this.btThem.Size = new System.Drawing.Size(86, 38);
             this.btThem.TabIndex = 6;
             this.btThem.Text = "Thêm";
             this.btThem.UseVisualStyleBackColor = true;
-            // 
-            // maPB
-            // 
-            this.maPB.HeaderText = "Mã Phòng ban";
-            this.maPB.MinimumWidth = 6;
-            this.maPB.Name = "maPB";
-            this.maPB.Width = 200;
-            // 
-            // dataGridView1
-            // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.maPB,
-            this.tenPB,
-            this.maTP,
-            this.TenTP});
-            this.dataGridView1.Location = new System.Drawing.Point(3, 3);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(950, 357);
-            this.dataGridView1.TabIndex = 0;
-            // 
-            // maTP
-            // 
-            this.maTP.HeaderText = "Mã Trưởng phòng";
-            this.maTP.MinimumWidth = 6;
-            this.maTP.Name = "maTP";
-            this.maTP.Width = 200;
+            this.btThem.Click += new System.EventHandler(this.btThem_Click);
             // 
             // panel2
             // 
-            this.panel2.Controls.Add(this.dataGridView1);
+            this.panel2.Controls.Add(this.phongBanDataGridView);
             this.panel2.Location = new System.Drawing.Point(106, 345);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(953, 357);
+            this.panel2.Size = new System.Drawing.Size(952, 357);
             this.panel2.TabIndex = 1;
             // 
-            // btSearch
+            // phongBanDataGridView
             // 
-            this.btSearch.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btSearch.Location = new System.Drawing.Point(77, 253);
-            this.btSearch.Name = "btSearch";
-            this.btSearch.Size = new System.Drawing.Size(100, 27);
-            this.btSearch.TabIndex = 5;
-            this.btSearch.Text = "Tìm kiếm";
-            this.btSearch.UseVisualStyleBackColor = true;
+            this.phongBanDataGridView.AutoGenerateColumns = false;
+            this.phongBanDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.phongBanDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridViewTextBoxColumn1,
+            this.dataGridViewTextBoxColumn2,
+            this.dataGridViewTextBoxColumn3,
+            this.dataGridViewTextBoxColumn4,
+            this.dataGridViewTextBoxColumn5});
+            this.phongBanDataGridView.DataSource = this.phongBanBindingSource;
+            this.phongBanDataGridView.Location = new System.Drawing.Point(165, 19);
+            this.phongBanDataGridView.Name = "phongBanDataGridView";
+            this.phongBanDataGridView.RowHeadersWidth = 51;
+            this.phongBanDataGridView.Size = new System.Drawing.Size(678, 285);
+            this.phongBanDataGridView.TabIndex = 0;
+            // 
+            // dataGridViewTextBoxColumn1
+            // 
+            this.dataGridViewTextBoxColumn1.DataPropertyName = "MAPB";
+            this.dataGridViewTextBoxColumn1.HeaderText = "MAPB";
+            this.dataGridViewTextBoxColumn1.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+            this.dataGridViewTextBoxColumn1.Width = 125;
+            // 
+            // dataGridViewTextBoxColumn2
+            // 
+            this.dataGridViewTextBoxColumn2.DataPropertyName = "TENPB";
+            this.dataGridViewTextBoxColumn2.HeaderText = "TENPB";
+            this.dataGridViewTextBoxColumn2.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
+            this.dataGridViewTextBoxColumn2.Width = 125;
+            // 
+            // dataGridViewTextBoxColumn3
+            // 
+            this.dataGridViewTextBoxColumn3.DataPropertyName = "MATP";
+            this.dataGridViewTextBoxColumn3.HeaderText = "MATP";
+            this.dataGridViewTextBoxColumn3.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
+            this.dataGridViewTextBoxColumn3.Width = 125;
+            // 
+            // dataGridViewTextBoxColumn4
+            // 
+            this.dataGridViewTextBoxColumn4.DataPropertyName = "TENTP";
+            this.dataGridViewTextBoxColumn4.HeaderText = "TENTP";
+            this.dataGridViewTextBoxColumn4.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
+            this.dataGridViewTextBoxColumn4.Width = 125;
+            // 
+            // dataGridViewTextBoxColumn5
+            // 
+            this.dataGridViewTextBoxColumn5.DataPropertyName = "DIACHI";
+            this.dataGridViewTextBoxColumn5.HeaderText = "DIACHI";
+            this.dataGridViewTextBoxColumn5.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
+            this.dataGridViewTextBoxColumn5.Width = 125;
+            // 
+            // phongBanBindingSource
+            // 
+            this.phongBanBindingSource.DataSource = typeof(DTO.PhongBan);
+            // 
+            // lbQLPB
+            // 
+            this.lbQLPB.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbQLPB.Location = new System.Drawing.Point(333, 19);
+            this.lbQLPB.Name = "lbQLPB";
+            this.lbQLPB.Size = new System.Drawing.Size(246, 34);
+            this.lbQLPB.TabIndex = 0;
+            this.lbQLPB.Text = "Quản ý Phòng Ban";
+            // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.button2);
+            this.panel1.Controls.Add(this.dIACHITextBox);
+            this.panel1.Controls.Add(this.button1);
+            this.panel1.Controls.Add(this.label1);
+            this.panel1.Controls.Add(this.mAPBTextBox);
+            this.panel1.Controls.Add(this.mATPTextBox);
+            this.panel1.Controls.Add(this.tENPBTextBox);
+            this.panel1.Controls.Add(this.tENTPTextBox);
+            this.panel1.Controls.Add(this.btSua);
+            this.panel1.Controls.Add(this.btThem);
+            this.panel1.Controls.Add(this.lbTenTp);
+            this.panel1.Controls.Add(this.lbTenPB);
+            this.panel1.Controls.Add(this.lbMaTP);
+            this.panel1.Controls.Add(this.lbMPB);
+            this.panel1.Controls.Add(this.lbQLPB);
+            this.panel1.Location = new System.Drawing.Point(106, 3);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(952, 336);
+            this.panel1.TabIndex = 0;
+            // 
+            // dIACHITextBox
+            // 
+            this.dIACHITextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.phongBanBindingSource, "DIACHI", true));
+            this.dIACHITextBox.Enabled = false;
+            this.dIACHITextBox.Location = new System.Drawing.Point(165, 223);
+            this.dIACHITextBox.Name = "dIACHITextBox";
+            this.dIACHITextBox.Size = new System.Drawing.Size(210, 22);
+            this.dIACHITextBox.TabIndex = 25;
+            // 
+            // button1
+            // 
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(462, 251);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(137, 44);
+            this.button1.TabIndex = 24;
+            this.button1.Text = "Hoàn thành";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // label1
+            // 
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(73, 223);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(88, 23);
+            this.label1.TabIndex = 23;
+            this.label1.Text = "Địa  Chỉ";
+            // 
+            // mAPBTextBox
+            // 
+            this.mAPBTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.phongBanBindingSource, "MAPB", true));
+            this.mAPBTextBox.Enabled = false;
+            this.mAPBTextBox.Location = new System.Drawing.Point(165, 104);
+            this.mAPBTextBox.Name = "mAPBTextBox";
+            this.mAPBTextBox.Size = new System.Drawing.Size(210, 22);
+            this.mAPBTextBox.TabIndex = 15;
+            this.mAPBTextBox.TextChanged += new System.EventHandler(this.mAPBTextBox_TextChanged);
+            // 
+            // mATPTextBox
+            // 
+            this.mATPTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.phongBanBindingSource, "MATP", true));
+            this.mATPTextBox.Enabled = false;
+            this.mATPTextBox.Location = new System.Drawing.Point(638, 104);
+            this.mATPTextBox.Name = "mATPTextBox";
+            this.mATPTextBox.Size = new System.Drawing.Size(219, 22);
+            this.mATPTextBox.TabIndex = 17;
+            // 
+            // tENPBTextBox
+            // 
+            this.tENPBTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.phongBanBindingSource, "TENPB", true));
+            this.tENPBTextBox.Enabled = false;
+            this.tENPBTextBox.Location = new System.Drawing.Point(165, 170);
+            this.tENPBTextBox.Name = "tENPBTextBox";
+            this.tENPBTextBox.Size = new System.Drawing.Size(210, 22);
+            this.tENPBTextBox.TabIndex = 19;
+            // 
+            // tENTPTextBox
+            // 
+            this.tENTPTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.phongBanBindingSource, "TENTP", true));
+            this.tENTPTextBox.Enabled = false;
+            this.tENTPTextBox.Location = new System.Drawing.Point(638, 175);
+            this.tENTPTextBox.Name = "tENTPTextBox";
+            this.tENTPTextBox.Size = new System.Drawing.Size(219, 22);
+            this.tENTPTextBox.TabIndex = 21;
             // 
             // lbTenTp
             // 
             this.lbTenTp.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbTenTp.Location = new System.Drawing.Point(526, 170);
+            this.lbTenTp.Location = new System.Drawing.Point(526, 175);
             this.lbTenTp.Name = "lbTenTp";
             this.lbTenTp.Size = new System.Drawing.Size(73, 17);
             this.lbTenTp.TabIndex = 4;
@@ -205,45 +267,6 @@
             this.lbTenPB.TabIndex = 3;
             this.lbTenPB.Text = "Tên PB";
             // 
-            // lbMPB
-            // 
-            this.lbMPB.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbMPB.Location = new System.Drawing.Point(77, 104);
-            this.lbMPB.Name = "lbMPB";
-            this.lbMPB.Size = new System.Drawing.Size(71, 17);
-            this.lbMPB.TabIndex = 1;
-            this.lbMPB.Text = "Mã PB";
-            // 
-            // lbQLPB
-            // 
-            this.lbQLPB.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbQLPB.Location = new System.Drawing.Point(333, 19);
-            this.lbQLPB.Name = "lbQLPB";
-            this.lbQLPB.Size = new System.Drawing.Size(246, 34);
-            this.lbQLPB.TabIndex = 0;
-            this.lbQLPB.Text = "Quản ý Phòng Ban";
-            // 
-            // panel1
-            // 
-            this.panel1.Controls.Add(this.textBox5);
-            this.panel1.Controls.Add(this.textBox4);
-            this.panel1.Controls.Add(this.textBox3);
-            this.panel1.Controls.Add(this.textBox2);
-            this.panel1.Controls.Add(this.textBox1);
-            this.panel1.Controls.Add(this.btXoa);
-            this.panel1.Controls.Add(this.btSua);
-            this.panel1.Controls.Add(this.btThem);
-            this.panel1.Controls.Add(this.btSearch);
-            this.panel1.Controls.Add(this.lbTenTp);
-            this.panel1.Controls.Add(this.lbTenPB);
-            this.panel1.Controls.Add(this.lbMaTP);
-            this.panel1.Controls.Add(this.lbMPB);
-            this.panel1.Controls.Add(this.lbQLPB);
-            this.panel1.Location = new System.Drawing.Point(106, 3);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(953, 336);
-            this.panel1.TabIndex = 0;
-            // 
             // lbMaTP
             // 
             this.lbMaTP.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -253,12 +276,21 @@
             this.lbMaTP.TabIndex = 2;
             this.lbMaTP.Text = "Mã TP";
             // 
+            // lbMPB
+            // 
+            this.lbMPB.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbMPB.Location = new System.Drawing.Point(77, 104);
+            this.lbMPB.Name = "lbMPB";
+            this.lbMPB.Size = new System.Drawing.Size(71, 17);
+            this.lbMPB.TabIndex = 1;
+            this.lbMPB.Text = "Mã PB";
+            // 
             // tableLayoutPanel1
             // 
             this.tableLayoutPanel1.ColumnCount = 3;
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 9.756098F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 90.2439F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 63F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 64F));
             this.tableLayoutPanel1.Controls.Add(this.panel1, 1, 0);
             this.tableLayoutPanel1.Controls.Add(this.panel2, 1, 1);
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 2);
@@ -271,6 +303,17 @@
             this.tableLayoutPanel1.Size = new System.Drawing.Size(1126, 705);
             this.tableLayoutPanel1.TabIndex = 1;
             // 
+            // button2
+            // 
+            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.Location = new System.Drawing.Point(715, 254);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(128, 46);
+            this.button2.TabIndex = 26;
+            this.button2.Text = "Hoàn Thành";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
             // PhongBan
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -278,11 +321,13 @@
             this.ClientSize = new System.Drawing.Size(1126, 708);
             this.Controls.Add(this.tableLayoutPanel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "PhongBan";
             this.Text = "PhongBan";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.Load += new System.EventHandler(this.PhongBan_Load);
             this.panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.phongBanDataGridView)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.phongBanBindingSource)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.tableLayoutPanel1.ResumeLayout(false);
@@ -291,28 +336,30 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.DataGridViewTextBoxColumn TenTP;
-        private System.Windows.Forms.DataGridViewTextBoxColumn tenPB;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Button btXoa;
         private System.Windows.Forms.Button btSua;
         private System.Windows.Forms.Button btThem;
-        private System.Windows.Forms.DataGridViewTextBoxColumn maPB;
-        private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn maTP;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Button btSearch;
-        private System.Windows.Forms.Label lbTenTp;
-        private System.Windows.Forms.Label lbTenPB;
-        private System.Windows.Forms.Label lbMPB;
         private System.Windows.Forms.Label lbQLPB;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Label lbMaTP;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
+        private System.Windows.Forms.BindingSource phongBanBindingSource;
+        private System.Windows.Forms.TextBox mAPBTextBox;
+        private System.Windows.Forms.TextBox mATPTextBox;
+        private System.Windows.Forms.TextBox tENPBTextBox;
+        private System.Windows.Forms.TextBox tENTPTextBox;
+        private System.Windows.Forms.Label lbTenTp;
+        private System.Windows.Forms.Label lbTenPB;
+        private System.Windows.Forms.Label lbMaTP;
+        private System.Windows.Forms.Label lbMPB;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.DataGridView phongBanDataGridView;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn5;
+        private System.Windows.Forms.TextBox dIACHITextBox;
+        private System.Windows.Forms.Button button2;
     }
 }

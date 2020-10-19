@@ -227,5 +227,107 @@ namespace DAO
             return dt;
         }
 
+        public DataTable ExecuteQuery(string query, object[] parameter = null)
+        {
+            DataTable data = new DataTable();
+            using (SqlConnection connec = new SqlConnection(connectionString))
+            {
+                connec.Open();
+                SqlCommand command = new SqlCommand(query, connec);
+                if(parameter != null)
+                {
+                    string[] listPara = query.Split(' ');
+                    int i = 0;
+                    foreach (string item in listPara)
+                    {
+                        if (item.Contains('@'))
+                        {
+                            command.Parameters.AddWithValue(item, parameter[i]);
+                            i++;
+                        }
+                    }
+                }
+                SqlDataAdapter adapter = new SqlDataAdapter(command);
+                adapter.Fill(data);
+                connec.Close();
+            }
+            return data;
+        }
+
+                                                  //Phong ban//
+        public static DataTable getAllPhongBan()
+        {
+            string sql = "select *from PHONGBAN";
+            SqlDataAdapter dap = new SqlDataAdapter(sql, conn);
+            DataTable dt = new DataTable();
+            dap.Fill(dt);
+            return dt;
+        }
+        public static DataTable getPhongBan(string a)
+        {
+
+            string sql = "select " + a + " from PHONGBAN";
+            SqlDataAdapter dap = new SqlDataAdapter(sql, conn);
+            DataTable dt = new DataTable();
+            dap.Fill(dt);
+            return dt;
+        }
+        public static DataTable getTenPhongBan(string tenpb)
+        {
+
+
+            string sql = "select n.MaNV as N'Mã nhân viên', HoTen as N'Họ tên', LuongCB as N'Lương', LuongThuong as N'Thưởng', GhiChu as N'Ghi chú', TenPB as N'Tên phòng ban' from PHONGBAN p, NHANVIEN n, LUONG l where l.MaNV=n.MaNV and p.MaPB=n.MaPB and TenPB=@tenpb ";
+
+            DataTable dt = new DataTable();
+            using (SqlCommand command = new SqlCommand(sql, conn))
+            {
+                command.Parameters.Add(new SqlParameter("@tenpb", tenpb));
+
+                SqlDataAdapter da = new SqlDataAdapter(command);
+                da.Fill(dt);
+
+
+            }
+            return dt;
+        }
+
+        public static DataTable timKiemPhongBan(string pb)
+        {
+            string sql = "select * from PHONGBAN p where ((TenPB like '%' + @text + '%') or(DiaChi like '%' + @text + '%') or(MaPB like '%' + @text + '%') or(TenTP like '%' + @text + '%') or(MaTP like '%' + @text + '%'))";
+
+            SqlCommand cmd = new SqlCommand(sql, conn);
+            cmd.Parameters.AddWithValue("text", pb);
+            cmd.ExecuteNonQuery();
+            cmd.CommandType = CommandType.Text;
+            SqlDataAdapter adapter = new SqlDataAdapter(cmd);
+            DataTable sttable = new DataTable();
+            adapter.Fill(sttable);
+            return sttable;
+        }
+
+
+
+        public static int checkPhongBan(string mapb)
+        {
+
+            string sql = "select * from PHONGBAN p where ((TenPB like '%' + @text + '%') or(DiaChi like '%' + @text + '%') or(MaPB like '%' + @text + '%') or(TenTP like '%' + @text + '%') or(MaTP like '%' + @text + '%'))";
+            using (SqlCommand command = new SqlCommand(sql, conn))
+            {
+                command.Parameters.Add(new SqlParameter("@text", mapb));
+                using (SqlDataReader dataReader = command.ExecuteReader())
+                {
+
+                    if (dataReader.Read() == true)
+                    {
+                        return 1;
+                    }
+
+
+
+                }
+            }
+            return 0;
+        }
+
     }
 }
