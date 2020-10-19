@@ -17,6 +17,7 @@ namespace View
         public FormThongTinNhanVien()
         {
             InitializeComponent();
+            this.radioButton1.Checked = true;
 
         }
 
@@ -26,7 +27,16 @@ namespace View
             var db = new DatabaseNV();
             List<CustomerParameter> lst = new List<CustomerParameter>();
             lst.Add(new CustomerParameter() { key = "@tukhoa", value = textBoxTimkiem.Text });
-            dgvKetQua.DataSource = db.SelectData("SelectAllNhanVien", lst);
+            string sql = "";
+            if (this.radioButton1.Checked == true)
+            {
+                sql = "SelectAllNhanVien";
+            }
+            if (this.radioButton2.Checked == true)
+            {
+                sql = "SelectAllNhanVienHetHan";
+            }
+            dgvKetQua.DataSource = db.SelectData(sql, lst);
         }
 
         private void FormThongTinNhanVienNhanVien_Load(object sender, EventArgs e)
