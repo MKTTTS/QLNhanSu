@@ -89,7 +89,11 @@ namespace View
 
         private void btnPhongBan_Click(object sender, EventArgs e)
         {
+
             hideSubMenu();
+            PhongBan pb = new PhongBan();
+            pb.TopLevel = false;
+            openChildForm(pb);
         }
 
         private void btnChucVu_Click(object sender, EventArgs e)
