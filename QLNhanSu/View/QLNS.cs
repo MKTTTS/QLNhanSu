@@ -27,7 +27,7 @@ namespace View
 
         private void thôngTinNhânViênToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            ThongTinNhanVien ttnv = new ThongTinNhanVien();
+            FormThongTinNhanVien ttnv = new FormThongTinNhanVien();
             ttnv.TopLevel = false;
             panel1.Controls.Add(ttnv);
             ttnv.Show();

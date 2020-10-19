@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+<<<<<<< HEAD
                this.dgvKetQua = new System.Windows.Forms.DataGridView();
                this.label1 = new System.Windows.Forms.Label();
                this.cbxTieuChi = new System.Windows.Forms.ComboBox();
@@ -216,10 +217,26 @@
                this.groupBox2.ResumeLayout(false);
                this.groupBox2.PerformLayout();
                this.ResumeLayout(false);
+=======
+            this.SuspendLayout();
+            // 
+            // TimKiemNhanVien
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(1041, 614);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            this.Margin = new System.Windows.Forms.Padding(4);
+            this.Name = "TimKiemNhanVien";
+            this.Text = "TimKiemNhanVien";
+            this.Load += new System.EventHandler(this.TimKiemNhanVien_Load);
+            this.ResumeLayout(false);
+>>>>>>> XuanTung
 
         }
 
           #endregion
+<<<<<<< HEAD
 
           private System.Windows.Forms.DataGridView dgvKetQua;
           private System.Windows.Forms.Label label1;
@@ -235,4 +252,7 @@
           private System.Windows.Forms.CheckBox cbMaNV;
           private System.Windows.Forms.ComboBox cbxDeMuc;
      }
+=======
+    }
+>>>>>>> XuanTung
 }

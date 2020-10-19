@@ -17,6 +17,7 @@ namespace View
         public TimKiemNhanVien()
         {
             InitializeComponent();
+<<<<<<< HEAD
               
           }
 
@@ -45,18 +46,16 @@ namespace View
                {
                     SqlDataAdapter da = new SqlDataAdapter("SELECT * FROM PHONGBAN", sqlCon);
                     da.Fill(dt);
+=======
 
-                    for (int i = 0; i < dt.Rows.Count; i++)
-                    {
-                         cbxDeMuc.Items.Add(dt.Rows[i]["TenPB"]);
-                    }
-               }
+        }
+>>>>>>> XuanTung
 
-               if (cbxTieuChi.Text == "Địa Chỉ")
-               {
-                    SqlDataAdapter da = new SqlDataAdapter("SELECT DISTINCT DiaChi FROM NHANVIEN", sqlCon);
-                    da.Fill(dt);
 
+        private void TimKiemNhanVien_Load(object sender, EventArgs e)
+        {
+
+<<<<<<< HEAD
                     for (int i = 0; i < dt.Rows.Count; i++)
                     {
                          cbxDeMuc.Items.Add(dt.Rows[i]["DiaChi"]);
@@ -189,4 +188,10 @@ namespace View
                }
           }
      }
+=======
+        }
+
+
+    }
+>>>>>>> XuanTung
 }
