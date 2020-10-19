@@ -51,22 +51,21 @@ namespace View
         #region QuanLyNhanVienSubMenu
         private void btnThongTinNhanVien_Click(object sender, EventArgs e)
         {
-<<<<<<< HEAD
             hideSubMenu();
-
-=======
             FormThongTinNhanVien ttnv = new FormThongTinNhanVien();
             ttnv.TopLevel = false;
             panelChildForm.Controls.Add(ttnv);
-            ttnv.Show();
->>>>>>> XuanTung
+            //ttnv.Show();
+            openChildForm(ttnv);
+
         }
 
         private void btnTimKiem_Click(object sender, EventArgs e)
         {
             hideSubMenu();
                TimKiemNhanVien tknv = new TimKiemNhanVien();
-               openChildForm(tknv);
+            tknv.TopLevel = false;
+            openChildForm(tknv);
         }
         #endregion
 
