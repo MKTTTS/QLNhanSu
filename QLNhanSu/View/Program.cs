@@ -19,7 +19,7 @@ namespace View
 
 
 
-            Application.Run(new Login());
+            Application.Run(new ChucVu());
 
         }
 

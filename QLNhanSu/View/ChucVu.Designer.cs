@@ -1,4 +1,6 @@
-﻿namespace View
+﻿
+
+namespace View
 {
     partial class ChucVu
     {
