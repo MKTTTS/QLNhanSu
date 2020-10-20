@@ -48,38 +48,27 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-<<<<<<< HEAD
-    <Compile Include="ChucVu.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="ChucVu.Designer.cs">
-      <DependentUpon>ChucVu.cs</DependentUpon>
-    </Compile>
     <Compile Include="CustomerParameter.cs" />
-=======
->>>>>>> SonHP
     <Compile Include="DanToc.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="DanToc.Designer.cs">
       <DependentUpon>DanToc.cs</DependentUpon>
     </Compile>
-
     <Compile Include="DoiMatKhau.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="DoiMatKhau.Designer.cs">
       <DependentUpon>DoiMatKhau.cs</DependentUpon>
     </Compile>
-
     <Compile Include="DatabaseNV.cs" />
-	<Compile Include="Form1.cs">
+    <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form1.designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-        <Compile Include="FormThemNhanVien.cs">
+    <Compile Include="FormThemNhanVien.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FormThemNhanVien.Designer.cs">
@@ -159,24 +148,18 @@
     <Compile Include="TrinhDoTiengAnh.Designer.cs">
       <DependentUpon>TrinhDoTiengAnh.cs</DependentUpon>
     </Compile>
-<<<<<<< HEAD
     <Compile Include="XoaNhanVien.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="XoaNhanVien.Designer.cs">
       <DependentUpon>XoaNhanVien.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="ChucVu.resx">
-      <DependentUpon>ChucVu.cs</DependentUpon>
-    </EmbeddedResource>
-=======
     <Compile Include="Vitri.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Vitri.Designer.cs">
       <DependentUpon>Vitri.cs</DependentUpon>
     </Compile>
->>>>>>> SonHP
     <EmbeddedResource Include="DanToc.resx">
       <DependentUpon>DanToc.cs</DependentUpon>
     </EmbeddedResource>
@@ -235,13 +218,11 @@
     <EmbeddedResource Include="TrinhDoTiengAnh.resx">
       <DependentUpon>TrinhDoTiengAnh.cs</DependentUpon>
     </EmbeddedResource>
-<<<<<<< HEAD
     <EmbeddedResource Include="XoaNhanVien.resx">
       <DependentUpon>XoaNhanVien.cs</DependentUpon>
-=======
+    </EmbeddedResource>
     <EmbeddedResource Include="Vitri.resx">
       <DependentUpon>Vitri.cs</DependentUpon>
->>>>>>> SonHP
     </EmbeddedResource>
     <None Include="Properties\DataSources\DTO.DTO_Login.datasource" />
     <None Include="Properties\DataSources\DTO.ThongTinTaiKhoan.datasource" />

@@ -21,11 +21,9 @@ namespace DAO
             }
         }
 
-<<<<<<< HEAD
+
         public static string connectionString = @"Data Source=.;Initial Catalog=QuanLyNhanSu;Integrated Security=True";
-=======
-        public static string connectionString = @"Data Source=DESKTOP-85J13SR;Initial Catalog=QuanLyNhanSu;Integrated Security=True";
->>>>>>> SonHP
+
         public static SqlConnection GetConnection()
         {
             SqlConnection conn = new SqlConnection(connectionString);

@@ -28,8 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-
-
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.panelSideMenu = new System.Windows.Forms.Panel();
             this.btnExit = new System.Windows.Forms.Button();
@@ -199,7 +197,7 @@
             this.btnTrinhDoHocVan.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
             this.btnTrinhDoHocVan.Size = new System.Drawing.Size(250, 40);
             this.btnTrinhDoHocVan.TabIndex = 2;
-            this.btnTrinhDoHocVan.Text = "Trình độ học vấn";
+            this.btnTrinhDoHocVan.Text = "Vị trí công việc";
             this.btnTrinhDoHocVan.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnTrinhDoHocVan.UseVisualStyleBackColor = true;
             this.btnTrinhDoHocVan.Click += new System.EventHandler(this.btnTrinhDoHocVan_Click);
@@ -379,7 +377,6 @@
             this.panelLogo.ResumeLayout(false);
             this.panelLogo.PerformLayout();
             this.ResumeLayout(false);
-
 
         }
 

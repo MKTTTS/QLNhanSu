@@ -85,6 +85,9 @@ namespace View
         private void btnTrinhDoHocVan_Click(object sender, EventArgs e)
         {
             hideSubMenu();
+            Vitri vt = new Vitri();
+            vt.TopLevel = false;
+            openChildForm(vt);
         }
 
         private void btnPhongBan_Click(object sender, EventArgs e)
