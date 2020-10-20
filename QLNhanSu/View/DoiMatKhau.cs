@@ -12,8 +12,10 @@ namespace View
 {
     public partial class DoiMatKhau : Form
     {
-        public DoiMatKhau()
+        private string MaNV;
+        public DoiMatKhau(string mnv)
         {
+            this.MaNV = mnv;
             InitializeComponent();
         }
 
@@ -21,7 +23,7 @@ namespace View
         {
             if(matKhauMoi_txb.Text == xacNhan_txb.Text)
             {
-                bool check = BUS.BUS_TTTaiKhoan.Instance.DoiMatKhau(Form1.current_user_id, matKhauCu_txb.Text, matKhauMoi_txb.Text);
+                bool check = BUS.BUS_TTTaiKhoan.Instance.DoiMatKhau(this.MaNV, matKhauCu_txb.Text, matKhauMoi_txb.Text);
                 if (check)
                 {
                     MessageBox.Show("Đổi mật khẩu thành công!");

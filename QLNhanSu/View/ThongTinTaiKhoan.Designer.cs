@@ -88,10 +88,9 @@
             viTriLabel.AutoSize = true;
             viTriLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             viTriLabel.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            viTriLabel.Location = new System.Drawing.Point(22, 401);
-            viTriLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            viTriLabel.Location = new System.Drawing.Point(29, 494);
             viTriLabel.Name = "viTriLabel";
-            viTriLabel.Size = new System.Drawing.Size(40, 17);
+            viTriLabel.Size = new System.Drawing.Size(49, 20);
             viTriLabel.TabIndex = 22;
             viTriLabel.Text = "Vị trí:";
             // 
@@ -100,10 +99,9 @@
             tonGiaoLabel.AutoSize = true;
             tonGiaoLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             tonGiaoLabel.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            tonGiaoLabel.Location = new System.Drawing.Point(330, 220);
-            tonGiaoLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            tonGiaoLabel.Location = new System.Drawing.Point(440, 271);
             tonGiaoLabel.Name = "tonGiaoLabel";
-            tonGiaoLabel.Size = new System.Drawing.Size(68, 17);
+            tonGiaoLabel.Size = new System.Drawing.Size(78, 20);
             tonGiaoLabel.TabIndex = 20;
             tonGiaoLabel.Text = "Tôn giáo:";
             // 
@@ -112,10 +110,9 @@
             sDTLabel.AutoSize = true;
             sDTLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             sDTLabel.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            sDTLabel.Location = new System.Drawing.Point(22, 340);
-            sDTLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            sDTLabel.Location = new System.Drawing.Point(29, 418);
             sDTLabel.Name = "sDTLabel";
-            sDTLabel.Size = new System.Drawing.Size(95, 17);
+            sDTLabel.Size = new System.Drawing.Size(111, 20);
             sDTLabel.TabIndex = 18;
             sDTLabel.Text = "Số điện thoại:";
             // 
@@ -124,10 +121,9 @@
             phongBanLabel.AutoSize = true;
             phongBanLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             phongBanLabel.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            phongBanLabel.Location = new System.Drawing.Point(22, 461);
-            phongBanLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            phongBanLabel.Location = new System.Drawing.Point(29, 567);
             phongBanLabel.Name = "phongBanLabel";
-            phongBanLabel.Size = new System.Drawing.Size(81, 17);
+            phongBanLabel.Size = new System.Drawing.Size(93, 20);
             phongBanLabel.TabIndex = 16;
             phongBanLabel.Text = "Phòng ban:";
             // 
@@ -136,10 +132,9 @@
             ngaySinhLabel.AutoSize = true;
             ngaySinhLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             ngaySinhLabel.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            ngaySinhLabel.Location = new System.Drawing.Point(22, 160);
-            ngaySinhLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            ngaySinhLabel.Location = new System.Drawing.Point(29, 197);
             ngaySinhLabel.Name = "ngaySinhLabel";
-            ngaySinhLabel.Size = new System.Drawing.Size(75, 17);
+            ngaySinhLabel.Size = new System.Drawing.Size(88, 20);
             ngaySinhLabel.TabIndex = 14;
             ngaySinhLabel.Text = "Ngày sinh:";
             // 
@@ -148,10 +143,9 @@
             luongLabel.AutoSize = true;
             luongLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             luongLabel.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            luongLabel.Location = new System.Drawing.Point(330, 462);
-            luongLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            luongLabel.Location = new System.Drawing.Point(440, 569);
             luongLabel.Name = "luongLabel";
-            luongLabel.Size = new System.Drawing.Size(52, 17);
+            luongLabel.Size = new System.Drawing.Size(60, 20);
             luongLabel.TabIndex = 12;
             luongLabel.Text = "Lương:";
             // 
@@ -160,10 +154,9 @@
             hoTenLabel.AutoSize = true;
             hoTenLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             hoTenLabel.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            hoTenLabel.Location = new System.Drawing.Point(22, 100);
-            hoTenLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            hoTenLabel.Location = new System.Drawing.Point(29, 123);
             hoTenLabel.Name = "hoTenLabel";
-            hoTenLabel.Size = new System.Drawing.Size(73, 17);
+            hoTenLabel.Size = new System.Drawing.Size(86, 20);
             hoTenLabel.TabIndex = 10;
             hoTenLabel.Text = "Họ và tên:";
             // 
@@ -172,10 +165,9 @@
             diaChiLabel.AutoSize = true;
             diaChiLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             diaChiLabel.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            diaChiLabel.Location = new System.Drawing.Point(22, 280);
-            diaChiLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            diaChiLabel.Location = new System.Drawing.Point(29, 345);
             diaChiLabel.Name = "diaChiLabel";
-            diaChiLabel.Size = new System.Drawing.Size(55, 17);
+            diaChiLabel.Size = new System.Drawing.Size(66, 20);
             diaChiLabel.TabIndex = 6;
             diaChiLabel.Text = "Địa chỉ:";
             // 
@@ -184,10 +176,9 @@
             danTocLabel.AutoSize = true;
             danTocLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             danTocLabel.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            danTocLabel.Location = new System.Drawing.Point(22, 220);
-            danTocLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            danTocLabel.Location = new System.Drawing.Point(29, 271);
             danTocLabel.Name = "danTocLabel";
-            danTocLabel.Size = new System.Drawing.Size(61, 17);
+            danTocLabel.Size = new System.Drawing.Size(73, 20);
             danTocLabel.TabIndex = 4;
             danTocLabel.Text = "Dân tộc:";
             // 
@@ -196,10 +187,9 @@
             cMTNDLabel.AutoSize = true;
             cMTNDLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             cMTNDLabel.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            cMTNDLabel.Location = new System.Drawing.Point(330, 160);
-            cMTNDLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            cMTNDLabel.Location = new System.Drawing.Point(440, 197);
             cMTNDLabel.Name = "cMTNDLabel";
-            cMTNDLabel.Size = new System.Drawing.Size(61, 17);
+            cMTNDLabel.Size = new System.Drawing.Size(75, 20);
             cMTNDLabel.TabIndex = 0;
             cMTNDLabel.Text = "CMTND:";
             // 
@@ -208,10 +198,9 @@
             gioiTinhLabel.AutoSize = true;
             gioiTinhLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             gioiTinhLabel.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            gioiTinhLabel.Location = new System.Drawing.Point(330, 100);
-            gioiTinhLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            gioiTinhLabel.Location = new System.Drawing.Point(440, 123);
             gioiTinhLabel.Name = "gioiTinhLabel";
-            gioiTinhLabel.Size = new System.Drawing.Size(64, 17);
+            gioiTinhLabel.Size = new System.Drawing.Size(76, 20);
             gioiTinhLabel.TabIndex = 23;
             gioiTinhLabel.Text = "Giới tính:";
             // 
@@ -220,10 +209,9 @@
             bangCapLabel.AutoSize = true;
             bangCapLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             bangCapLabel.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            bangCapLabel.Location = new System.Drawing.Point(330, 340);
-            bangCapLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            bangCapLabel.Location = new System.Drawing.Point(440, 418);
             bangCapLabel.Name = "bangCapLabel";
-            bangCapLabel.Size = new System.Drawing.Size(72, 17);
+            bangCapLabel.Size = new System.Drawing.Size(85, 20);
             bangCapLabel.TabIndex = 27;
             bangCapLabel.Text = "Bằng cấp:";
             // 
@@ -232,20 +220,19 @@
             chucVuLabel.AutoSize = true;
             chucVuLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             chucVuLabel.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            chucVuLabel.Location = new System.Drawing.Point(330, 401);
-            chucVuLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            chucVuLabel.Location = new System.Drawing.Point(440, 494);
             chucVuLabel.Name = "chucVuLabel";
-            chucVuLabel.Size = new System.Drawing.Size(63, 17);
+            chucVuLabel.Size = new System.Drawing.Size(75, 20);
             chucVuLabel.TabIndex = 2;
             chucVuLabel.Text = "Chức vụ:";
             // 
             // chinhSua_btn
             // 
             this.chinhSua_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.chinhSua_btn.Location = new System.Drawing.Point(4, 338);
-            this.chinhSua_btn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.chinhSua_btn.Location = new System.Drawing.Point(5, 416);
+            this.chinhSua_btn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.chinhSua_btn.Name = "chinhSua_btn";
-            this.chinhSua_btn.Size = new System.Drawing.Size(101, 62);
+            this.chinhSua_btn.Size = new System.Drawing.Size(135, 76);
             this.chinhSua_btn.TabIndex = 0;
             this.chinhSua_btn.Text = "CHỈNH SỬA";
             this.chinhSua_btn.UseVisualStyleBackColor = true;
@@ -254,10 +241,10 @@
             // doiMatKhau_btn
             // 
             this.doiMatKhau_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.doiMatKhau_btn.Location = new System.Drawing.Point(4, 418);
-            this.doiMatKhau_btn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.doiMatKhau_btn.Location = new System.Drawing.Point(5, 514);
+            this.doiMatKhau_btn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.doiMatKhau_btn.Name = "doiMatKhau_btn";
-            this.doiMatKhau_btn.Size = new System.Drawing.Size(101, 61);
+            this.doiMatKhau_btn.Size = new System.Drawing.Size(135, 75);
             this.doiMatKhau_btn.TabIndex = 1;
             this.doiMatKhau_btn.Text = "ĐỔI MẬT KHẨU";
             this.doiMatKhau_btn.UseVisualStyleBackColor = true;
@@ -270,19 +257,19 @@
             this.panel2.Controls.Add(this.xong_btn);
             this.panel2.Controls.Add(this.chinhSua_btn);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel2.Location = new System.Drawing.Point(624, 0);
-            this.panel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel2.Location = new System.Drawing.Point(832, 0);
+            this.panel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(126, 528);
+            this.panel2.Size = new System.Drawing.Size(168, 650);
             this.panel2.TabIndex = 1;
             // 
             // xong_btn
             // 
             this.xong_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.xong_btn.Location = new System.Drawing.Point(4, 100);
-            this.xong_btn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.xong_btn.Location = new System.Drawing.Point(5, 123);
+            this.xong_btn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.xong_btn.Name = "xong_btn";
-            this.xong_btn.Size = new System.Drawing.Size(101, 62);
+            this.xong_btn.Size = new System.Drawing.Size(135, 76);
             this.xong_btn.TabIndex = 0;
             this.xong_btn.Text = "XONG";
             this.xong_btn.UseVisualStyleBackColor = true;
@@ -292,10 +279,10 @@
             // 
             this.tonGiaoTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.thongTinTaiKhoanBindingSource, "TonGiao", true));
             this.tonGiaoTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.tonGiaoTextBox.Location = new System.Drawing.Point(403, 217);
-            this.tonGiaoTextBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tonGiaoTextBox.Location = new System.Drawing.Point(537, 267);
+            this.tonGiaoTextBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tonGiaoTextBox.Name = "tonGiaoTextBox";
-            this.tonGiaoTextBox.Size = new System.Drawing.Size(204, 23);
+            this.tonGiaoTextBox.Size = new System.Drawing.Size(271, 26);
             this.tonGiaoTextBox.TabIndex = 21;
             // 
             // thongTinTaiKhoanBindingSource
@@ -306,60 +293,60 @@
             // 
             this.sDTTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.thongTinTaiKhoanBindingSource, "SDT", true));
             this.sDTTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.sDTTextBox.Location = new System.Drawing.Point(110, 338);
-            this.sDTTextBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.sDTTextBox.Location = new System.Drawing.Point(147, 416);
+            this.sDTTextBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.sDTTextBox.Name = "sDTTextBox";
-            this.sDTTextBox.Size = new System.Drawing.Size(204, 23);
+            this.sDTTextBox.Size = new System.Drawing.Size(271, 26);
             this.sDTTextBox.TabIndex = 19;
             // 
             // ngaySinhDateTimePicker
             // 
             this.ngaySinhDateTimePicker.DataBindings.Add(new System.Windows.Forms.Binding("Value", this.thongTinTaiKhoanBindingSource, "NgaySinh", true));
             this.ngaySinhDateTimePicker.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.ngaySinhDateTimePicker.Location = new System.Drawing.Point(110, 158);
-            this.ngaySinhDateTimePicker.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.ngaySinhDateTimePicker.Location = new System.Drawing.Point(147, 194);
+            this.ngaySinhDateTimePicker.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ngaySinhDateTimePicker.Name = "ngaySinhDateTimePicker";
-            this.ngaySinhDateTimePicker.Size = new System.Drawing.Size(204, 23);
+            this.ngaySinhDateTimePicker.Size = new System.Drawing.Size(271, 26);
             this.ngaySinhDateTimePicker.TabIndex = 15;
             // 
             // hoTenTextBox
             // 
             this.hoTenTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.thongTinTaiKhoanBindingSource, "HoTen", true));
             this.hoTenTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.hoTenTextBox.Location = new System.Drawing.Point(110, 98);
-            this.hoTenTextBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.hoTenTextBox.Location = new System.Drawing.Point(147, 121);
+            this.hoTenTextBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.hoTenTextBox.Name = "hoTenTextBox";
-            this.hoTenTextBox.Size = new System.Drawing.Size(204, 23);
+            this.hoTenTextBox.Size = new System.Drawing.Size(271, 26);
             this.hoTenTextBox.TabIndex = 11;
             // 
             // diaChiTextBox
             // 
             this.diaChiTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.thongTinTaiKhoanBindingSource, "DiaChi", true));
             this.diaChiTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.diaChiTextBox.Location = new System.Drawing.Point(110, 278);
-            this.diaChiTextBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.diaChiTextBox.Location = new System.Drawing.Point(147, 342);
+            this.diaChiTextBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.diaChiTextBox.Name = "diaChiTextBox";
-            this.diaChiTextBox.Size = new System.Drawing.Size(497, 23);
+            this.diaChiTextBox.Size = new System.Drawing.Size(661, 26);
             this.diaChiTextBox.TabIndex = 7;
             // 
             // danTocTextBox
             // 
             this.danTocTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.thongTinTaiKhoanBindingSource, "DanToc", true));
             this.danTocTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.danTocTextBox.Location = new System.Drawing.Point(110, 218);
-            this.danTocTextBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.danTocTextBox.Location = new System.Drawing.Point(147, 268);
+            this.danTocTextBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.danTocTextBox.Name = "danTocTextBox";
-            this.danTocTextBox.Size = new System.Drawing.Size(204, 23);
+            this.danTocTextBox.Size = new System.Drawing.Size(271, 26);
             this.danTocTextBox.TabIndex = 5;
             // 
             // cMTNDTextBox
             // 
             this.cMTNDTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.thongTinTaiKhoanBindingSource, "CMTND", true));
             this.cMTNDTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.cMTNDTextBox.Location = new System.Drawing.Point(403, 157);
-            this.cMTNDTextBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cMTNDTextBox.Location = new System.Drawing.Point(537, 193);
+            this.cMTNDTextBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cMTNDTextBox.Name = "cMTNDTextBox";
-            this.cMTNDTextBox.Size = new System.Drawing.Size(204, 23);
+            this.cMTNDTextBox.Size = new System.Drawing.Size(271, 26);
             this.cMTNDTextBox.TabIndex = 1;
             // 
             // panel1
@@ -396,9 +383,9 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(624, 528);
+            this.panel1.Size = new System.Drawing.Size(832, 650);
             this.panel1.TabIndex = 0;
             // 
             // gioiTinhComboBox
@@ -408,57 +395,57 @@
             this.gioiTinhComboBox.Items.AddRange(new object[] {
             "Nam",
             "Nữ"});
-            this.gioiTinhComboBox.Location = new System.Drawing.Point(403, 100);
-            this.gioiTinhComboBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.gioiTinhComboBox.Location = new System.Drawing.Point(537, 123);
+            this.gioiTinhComboBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.gioiTinhComboBox.Name = "gioiTinhComboBox";
-            this.gioiTinhComboBox.Size = new System.Drawing.Size(204, 21);
+            this.gioiTinhComboBox.Size = new System.Drawing.Size(271, 24);
             this.gioiTinhComboBox.TabIndex = 34;
             // 
             // tenPBTextBox
             // 
             this.tenPBTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.thongTinTaiKhoanBindingSource, "TenPB", true));
-            this.tenPBTextBox.Location = new System.Drawing.Point(110, 461);
-            this.tenPBTextBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tenPBTextBox.Location = new System.Drawing.Point(147, 567);
+            this.tenPBTextBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tenPBTextBox.Name = "tenPBTextBox";
-            this.tenPBTextBox.Size = new System.Drawing.Size(204, 20);
+            this.tenPBTextBox.Size = new System.Drawing.Size(271, 22);
             this.tenPBTextBox.TabIndex = 33;
             // 
             // tenVTTextBox
             // 
             this.tenVTTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.thongTinTaiKhoanBindingSource, "TenVT", true));
-            this.tenVTTextBox.Location = new System.Drawing.Point(110, 401);
-            this.tenVTTextBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tenVTTextBox.Location = new System.Drawing.Point(147, 494);
+            this.tenVTTextBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tenVTTextBox.Name = "tenVTTextBox";
-            this.tenVTTextBox.Size = new System.Drawing.Size(204, 20);
+            this.tenVTTextBox.Size = new System.Drawing.Size(271, 22);
             this.tenVTTextBox.TabIndex = 32;
             // 
             // tongLuongTextBox
             // 
             this.tongLuongTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.thongTinTaiKhoanBindingSource, "TongLuong", true));
-            this.tongLuongTextBox.Location = new System.Drawing.Point(403, 461);
-            this.tongLuongTextBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tongLuongTextBox.Location = new System.Drawing.Point(537, 567);
+            this.tongLuongTextBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tongLuongTextBox.Name = "tongLuongTextBox";
-            this.tongLuongTextBox.Size = new System.Drawing.Size(204, 20);
+            this.tongLuongTextBox.Size = new System.Drawing.Size(271, 22);
             this.tongLuongTextBox.TabIndex = 31;
             // 
             // tenCVTextBox
             // 
             this.tenCVTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.thongTinTaiKhoanBindingSource, "TenCV", true));
-            this.tenCVTextBox.Location = new System.Drawing.Point(403, 401);
-            this.tenCVTextBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tenCVTextBox.Location = new System.Drawing.Point(537, 494);
+            this.tenCVTextBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tenCVTextBox.Multiline = true;
             this.tenCVTextBox.Name = "tenCVTextBox";
-            this.tenCVTextBox.Size = new System.Drawing.Size(204, 19);
+            this.tenCVTextBox.Size = new System.Drawing.Size(271, 22);
             this.tenCVTextBox.TabIndex = 30;
             // 
             // bangCapTextBox
             // 
             this.bangCapTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.thongTinTaiKhoanBindingSource, "BangCap", true));
             this.bangCapTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.bangCapTextBox.Location = new System.Drawing.Point(403, 338);
-            this.bangCapTextBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.bangCapTextBox.Location = new System.Drawing.Point(537, 416);
+            this.bangCapTextBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.bangCapTextBox.Name = "bangCapTextBox";
-            this.bangCapTextBox.Size = new System.Drawing.Size(204, 23);
+            this.bangCapTextBox.Size = new System.Drawing.Size(271, 26);
             this.bangCapTextBox.TabIndex = 28;
             // 
             // hoTenLabel2
@@ -467,10 +454,9 @@
             this.hoTenLabel2.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.thongTinTaiKhoanBindingSource, "HoTen", true));
             this.hoTenLabel2.Font = new System.Drawing.Font("Arial Rounded MT Bold", 20.25F);
             this.hoTenLabel2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.hoTenLabel2.Location = new System.Drawing.Point(297, 31);
-            this.hoTenLabel2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.hoTenLabel2.Location = new System.Drawing.Point(396, 38);
             this.hoTenLabel2.Name = "hoTenLabel2";
-            this.hoTenLabel2.Size = new System.Drawing.Size(94, 32);
+            this.hoTenLabel2.Size = new System.Drawing.Size(116, 39);
             this.hoTenLabel2.TabIndex = 27;
             this.hoTenLabel2.Text = "label2";
             // 
@@ -479,10 +465,9 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Arial Rounded MT Bold", 20.25F);
             this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label1.Location = new System.Drawing.Point(28, 31);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Location = new System.Drawing.Point(37, 38);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(277, 32);
+            this.label1.Size = new System.Drawing.Size(353, 39);
             this.label1.TabIndex = 26;
             this.label1.Text = "Thông tin nhân viên:";
             // 
@@ -492,12 +477,13 @@
             // 
             // ThongTinTaiKhoan
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(750, 528);
+            this.ClientSize = new System.Drawing.Size(1000, 650);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "ThongTinTaiKhoan";
             this.Text = "ThongTinTaiKhoan";
             this.Load += new System.EventHandler(this.ThongTinTaiKhoan_Load);

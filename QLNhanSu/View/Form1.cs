@@ -12,12 +12,17 @@ namespace View
 {
     public partial class Form1 : Form
     {
-        public static string current_user_id = "NV00000001";
+        private string MaNV;
 
-        public Form1()
+        public Form1(string mnv)
         {
+            this.MaNV = mnv;
             InitializeComponent();
             hideSubMenu();
+        }
+        public string GETMANV()
+        {
+            return this.MaNV;
         }
 
         private void hideSubMenu()
@@ -111,7 +116,7 @@ namespace View
         private void btnTaiKhoan_Click(object sender, EventArgs e)
         {
             hideSubMenu();
-            openChildForm(new ThongTinTaiKhoan());
+            openChildForm(new ThongTinTaiKhoan(this.MaNV));
         }
         #region ToolsSubMenu
 

@@ -14,8 +14,10 @@ namespace View
     public partial class ThongTinTaiKhoan : Form
     {
         List<Control> listOfControl = new List<Control>();
-        public ThongTinTaiKhoan()
+        private string MaNV;
+        public ThongTinTaiKhoan(string mnv)
         {
+            this.MaNV = mnv;
             InitializeComponent();
             listOfControl.Add(this.hoTenTextBox);
             listOfControl.Add(this.gioiTinhComboBox);
@@ -51,12 +53,12 @@ namespace View
         }
         private void Loadt(string MaNV)
         {
-            thongTinTaiKhoanBindingSource.DataSource = BUS_TTTaiKhoan.Instance.LoadThongTinTaiKhoan(Form1.current_user_id);
+            thongTinTaiKhoanBindingSource.DataSource = BUS_TTTaiKhoan.Instance.LoadThongTinTaiKhoan(this.MaNV);
         }
 
         private void ThongTinTaiKhoan_Load(object sender, EventArgs e)
         {
-            Loadt(Form1.current_user_id);
+            Loadt(this.MaNV);
             disableComponent();
         }
 
@@ -67,14 +69,14 @@ namespace View
 
         private void xong_btn_Click(object sender, EventArgs e)
         {
-            BUS_TTTaiKhoan.Instance.DoiThongTinCaNhan(Form1.current_user_id, hoTenTextBox.Text, gioiTinhComboBox.Text, ngaySinhDateTimePicker.Value, cMTNDTextBox.Text, danTocTextBox.Text, tonGiaoTextBox.Text, diaChiTextBox.Text, sDTTextBox.Text, bangCapTextBox.Text);
+            BUS_TTTaiKhoan.Instance.DoiThongTinCaNhan(this.MaNV, hoTenTextBox.Text, gioiTinhComboBox.Text, ngaySinhDateTimePicker.Value, cMTNDTextBox.Text, danTocTextBox.Text, tonGiaoTextBox.Text, diaChiTextBox.Text, sDTTextBox.Text, bangCapTextBox.Text);
             disableComponent();
             
         }
 
         private void doiMatKhau_btn_Click(object sender, EventArgs e)
         {
-            DoiMatKhau dmk = new DoiMatKhau();
+            DoiMatKhau dmk = new DoiMatKhau(this.MaNV);
             dmk.ShowDialog();
         }
     }
