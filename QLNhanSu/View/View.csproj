@@ -48,12 +48,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ChucVu.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="ChucVu.Designer.cs">
-      <DependentUpon>ChucVu.cs</DependentUpon>
-    </Compile>
     <Compile Include="DanToc.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -128,9 +122,12 @@
     <Compile Include="TrinhDoTiengAnh.Designer.cs">
       <DependentUpon>TrinhDoTiengAnh.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="ChucVu.resx">
-      <DependentUpon>ChucVu.cs</DependentUpon>
-    </EmbeddedResource>
+    <Compile Include="Vitri.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vitri.Designer.cs">
+      <DependentUpon>Vitri.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="DanToc.resx">
       <DependentUpon>DanToc.cs</DependentUpon>
     </EmbeddedResource>
@@ -154,6 +151,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <EmbeddedResource Include="QLNS.resx">
       <DependentUpon>QLNS.cs</DependentUpon>
@@ -175,6 +173,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="TrinhDoTiengAnh.resx">
       <DependentUpon>TrinhDoTiengAnh.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vitri.resx">
+      <DependentUpon>Vitri.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\DataSources\DTO.DTO_Login.datasource" />
     <None Include="Properties\DataSources\DTO.ThongTinTaiKhoan.datasource" />
@@ -200,6 +201,18 @@
       <Project>{acb09f98-58d1-4f36-a3f0-fc15ef691b55}</Project>
       <Name>DTO</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Actions-document-save-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Save_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Save_48x48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Save_24x24.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
