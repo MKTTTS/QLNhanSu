@@ -48,6 +48,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+<<<<<<< HEAD
     <Compile Include="ChucVu.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -55,6 +56,8 @@
       <DependentUpon>ChucVu.cs</DependentUpon>
     </Compile>
     <Compile Include="CustomerParameter.cs" />
+=======
+>>>>>>> SonHP
     <Compile Include="DanToc.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -156,6 +159,7 @@
     <Compile Include="TrinhDoTiengAnh.Designer.cs">
       <DependentUpon>TrinhDoTiengAnh.cs</DependentUpon>
     </Compile>
+<<<<<<< HEAD
     <Compile Include="XoaNhanVien.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -165,6 +169,14 @@
     <EmbeddedResource Include="ChucVu.resx">
       <DependentUpon>ChucVu.cs</DependentUpon>
     </EmbeddedResource>
+=======
+    <Compile Include="Vitri.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vitri.Designer.cs">
+      <DependentUpon>Vitri.cs</DependentUpon>
+    </Compile>
+>>>>>>> SonHP
     <EmbeddedResource Include="DanToc.resx">
       <DependentUpon>DanToc.cs</DependentUpon>
     </EmbeddedResource>
@@ -200,6 +212,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <EmbeddedResource Include="QLNS.resx">
       <DependentUpon>QLNS.cs</DependentUpon>
@@ -222,8 +235,13 @@
     <EmbeddedResource Include="TrinhDoTiengAnh.resx">
       <DependentUpon>TrinhDoTiengAnh.cs</DependentUpon>
     </EmbeddedResource>
+<<<<<<< HEAD
     <EmbeddedResource Include="XoaNhanVien.resx">
       <DependentUpon>XoaNhanVien.cs</DependentUpon>
+=======
+    <EmbeddedResource Include="Vitri.resx">
+      <DependentUpon>Vitri.cs</DependentUpon>
+>>>>>>> SonHP
     </EmbeddedResource>
     <None Include="Properties\DataSources\DTO.DTO_Login.datasource" />
     <None Include="Properties\DataSources\DTO.ThongTinTaiKhoan.datasource" />
@@ -249,6 +267,18 @@
       <Project>{acb09f98-58d1-4f36-a3f0-fc15ef691b55}</Project>
       <Name>DTO</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Actions-document-save-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Save_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Save_48x48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Save_24x24.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
