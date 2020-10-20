@@ -16,7 +16,7 @@ namespace View
         string flag;
         SqlConnection connection;
         SqlCommand command;
-        string str = @"Data Source=DESKTOP-85J13SR;Initial Catalog=QuanLyNhanSu;Integrated Security=True";
+        string str = @"Data Source=.;Initial Catalog=QuanLyNhanSu;Integrated Security=True";
         SqlDataAdapter adapter = new SqlDataAdapter();
         System.Data.DataTable table = new System.Data.DataTable();
         void hienthi()

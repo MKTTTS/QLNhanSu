@@ -21,5 +21,6 @@ namespace DTO
         public string SDT { get; set; }
         public string DanToc { get; set; }
         public string TonGiao { get; set; }
+        //public string MaNV { get; set; }
     }
 }

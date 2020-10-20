@@ -21,13 +21,11 @@ namespace DAO
             }
         }
 
-<<<<<<< HEAD
-        public static string connectionString = @"Data Source=MIIINH\SQLEXPRESS;Initial Catalog=QuanLyNhanSu;Integrated Security=True";
-=======
+
 
         public static string connectionString = @"Data Source=.;Initial Catalog=QuanLyNhanSu;Integrated Security=True";
 
->>>>>>> c95d78b069871e04488717b5285bd8534b2afc27
+
         public static SqlConnection GetConnection()
         {
             SqlConnection conn = new SqlConnection(connectionString);

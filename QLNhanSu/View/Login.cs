@@ -22,11 +22,12 @@ namespace View
         {
             string check;
             check = BUS_Login.Instance.CheckLogin((Object)tenDangNhap_txb.Text, (Object)matKhau_txb.Text);
-            if (check != null)
+            if (check == "1")
             {
                 this.Hide();
-                Form1 fm = new Form1();
-                Form1.current_user_id = check;
+                List<CustomerParameter> lst = new List<CustomerParameter>();
+                string mnv = this.tenDangNhap_txb.Text;
+                Form1 fm = new Form1(mnv);
                 fm.ShowDialog();
                 this.Close();
             }
