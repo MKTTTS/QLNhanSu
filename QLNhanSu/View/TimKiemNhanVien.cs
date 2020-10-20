@@ -14,6 +14,7 @@ namespace View
 {
     public partial class TimKiemNhanVien : Form
     {
+        string connectionString = "Data Source=MIIINH\\SQLEXPRESS;Initial Catalog=QuanLyNhanSu;Integrated Security=True";
         public TimKiemNhanVien()
         {
             InitializeComponent();
