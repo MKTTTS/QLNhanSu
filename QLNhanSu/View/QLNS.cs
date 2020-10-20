@@ -27,7 +27,7 @@ namespace View
 
         private void thôngTinNhânViênToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            ThongTinNhanVien ttnv = new ThongTinNhanVien();
+            FormThongTinNhanVien ttnv = new FormThongTinNhanVien();
             ttnv.TopLevel = false;
             panel1.Controls.Add(ttnv);
             ttnv.Show();
@@ -83,10 +83,10 @@ namespace View
 
         private void chứcVụToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            ChucVu cv = new ChucVu();
-            cv.TopLevel = false;
-            panel1.Controls.Add(cv);
-            cv.Show();
+            //ChucVu cv = new ChucVu();
+            //cv.TopLevel = false;
+            //panel1.Controls.Add(cv);
+            //cv.Show();
         }
 
         private void helpToolStripMenuItem_Click(object sender, EventArgs e)

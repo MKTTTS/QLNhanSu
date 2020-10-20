@@ -52,11 +52,20 @@ namespace View
         private void btnThongTinNhanVien_Click(object sender, EventArgs e)
         {
             hideSubMenu();
+            FormThongTinNhanVien ttnv = new FormThongTinNhanVien();
+            ttnv.TopLevel = false;
+            panelChildForm.Controls.Add(ttnv);
+            //ttnv.Show();
+            openChildForm(ttnv);
+
         }
 
         private void btnTimKiem_Click(object sender, EventArgs e)
         {
             hideSubMenu();
+               TimKiemNhanVien tknv = new TimKiemNhanVien();
+            tknv.TopLevel = false;
+            openChildForm(tknv);
         }
         #endregion
 
@@ -76,11 +85,18 @@ namespace View
         private void btnTrinhDoHocVan_Click(object sender, EventArgs e)
         {
             hideSubMenu();
+            Vitri vt = new Vitri();
+            vt.TopLevel = false;
+            openChildForm(vt);
         }
 
         private void btnPhongBan_Click(object sender, EventArgs e)
         {
+
             hideSubMenu();
+            PhongBan pb = new PhongBan();
+            pb.TopLevel = false;
+            openChildForm(pb);
         }
 
         private void btnChucVu_Click(object sender, EventArgs e)

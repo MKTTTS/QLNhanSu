@@ -1,3 +1,4 @@
+<<<<<<< HEAD:QLNhanSu/View/ChucVu.cs
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -60,3 +61,25 @@ namespace View
         }
     }
 }
+=======
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+
+namespace View
+{
+    public partial class vitrinhanvien : Form
+    {
+        public vitrinhanvien()
+        {
+            InitializeComponent();
+        }
+    }
+}
+>>>>>>> c95d78b069871e04488717b5285bd8534b2afc27:vitrinhanvien.cs

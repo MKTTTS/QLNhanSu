@@ -16,9 +16,16 @@ namespace View
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
+<<<<<<< HEAD
             Application.Run(new ChucVu());
 
             //Application.Run(new TimKiemNhanVien());
        }
+=======
+
+            Application.Run(new Form1());
+
+        }
+>>>>>>> c95d78b069871e04488717b5285bd8534b2afc27
     }
 }

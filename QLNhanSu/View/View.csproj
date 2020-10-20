@@ -48,29 +48,49 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ChucVu.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="ChucVu.Designer.cs">
-      <DependentUpon>ChucVu.cs</DependentUpon>
-    </Compile>
+    <Compile Include="CustomerParameter.cs" />
     <Compile Include="DanToc.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="DanToc.Designer.cs">
       <DependentUpon>DanToc.cs</DependentUpon>
     </Compile>
+    <Compile Include="DoiMatKhau.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DoiMatKhau.Designer.cs">
+      <DependentUpon>DoiMatKhau.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DatabaseNV.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form1.designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormThemNhanVien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormThemNhanVien.Designer.cs">
+      <DependentUpon>FormThemNhanVien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormThongTinNhanVien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormThongTinNhanVien.Designer.cs">
+      <DependentUpon>FormThongTinNhanVien.cs</DependentUpon>
+    </Compile>
     <Compile Include="Help.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Help.Designer.cs">
       <DependentUpon>Help.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Hopdong.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Hopdong.Designer.cs">
+      <DependentUpon>Hopdong.cs</DependentUpon>
     </Compile>
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
@@ -128,17 +148,38 @@
     <Compile Include="TrinhDoTiengAnh.Designer.cs">
       <DependentUpon>TrinhDoTiengAnh.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="ChucVu.resx">
-      <DependentUpon>ChucVu.cs</DependentUpon>
-    </EmbeddedResource>
+    <Compile Include="XoaNhanVien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="XoaNhanVien.Designer.cs">
+      <DependentUpon>XoaNhanVien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vitri.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vitri.Designer.cs">
+      <DependentUpon>Vitri.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="DanToc.resx">
       <DependentUpon>DanToc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DoiMatKhau.resx">
+      <DependentUpon>DoiMatKhau.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormThemNhanVien.resx">
+      <DependentUpon>FormThemNhanVien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormThongTinNhanVien.resx">
+      <DependentUpon>FormThongTinNhanVien.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Help.resx">
       <DependentUpon>Help.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Hopdong.resx">
+      <DependentUpon>Hopdong.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
@@ -154,6 +195,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <EmbeddedResource Include="QLNS.resx">
       <DependentUpon>QLNS.cs</DependentUpon>
@@ -175,6 +217,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="TrinhDoTiengAnh.resx">
       <DependentUpon>TrinhDoTiengAnh.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XoaNhanVien.resx">
+      <DependentUpon>XoaNhanVien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vitri.resx">
+      <DependentUpon>Vitri.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\DataSources\DTO.DTO_Login.datasource" />
     <None Include="Properties\DataSources\DTO.ThongTinTaiKhoan.datasource" />
@@ -200,6 +248,18 @@
       <Project>{acb09f98-58d1-4f36-a3f0-fc15ef691b55}</Project>
       <Name>DTO</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Actions-document-save-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Save_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Save_48x48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Save_24x24.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
