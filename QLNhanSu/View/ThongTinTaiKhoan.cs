@@ -50,6 +50,7 @@ namespace View
                 c.Enabled = true;
             }
             xong_btn.Show();
+            this.bangCapTextBox.Enabled = false;
         }
         private void Loadt(string MaNV)
         {
@@ -66,10 +67,46 @@ namespace View
         {
             enableComponent();
         }
+        public bool CheckCMND(string S)
+        {
+            if (S.Length != 9 && S.Length != 12)
+            {
+                return false;
+            }
+            else
+            {
+                bool Result = true;
 
+                foreach (Char c in S)
+                {
+                    if (!Char.IsDigit(c))
+                    {
+                        Result = false;
+                    }
+                }
+                if (Result == true)
+                {
+                    var r = new DatabaseNV().Select("EXEC CHECKCMND '" + S + "'");
+                    if (r["TonTai"].ToString() == "1")
+                    {
+                        Result = false;
+                    }
+                }
+                return Result;
+
+
+
+            }
+        }
         private void xong_btn_Click(object sender, EventArgs e)
         {
+            if(CheckCMND(this.cMTNDTextBox.Text) == false)
+            {
+                MessageBox.Show("Số chứng minh nhân dân không hợp lệ");
+                return;
+            }
             BUS_TTTaiKhoan.Instance.DoiThongTinCaNhan(this.MaNV, hoTenTextBox.Text, gioiTinhComboBox.Text, ngaySinhDateTimePicker.Value, cMTNDTextBox.Text, danTocTextBox.Text, tonGiaoTextBox.Text, diaChiTextBox.Text, sDTTextBox.Text, bangCapTextBox.Text);
+            MessageBox.Show("Cập nhật thông tin thành công");
             disableComponent();
             
         }

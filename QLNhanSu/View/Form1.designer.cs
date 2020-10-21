@@ -37,8 +37,6 @@
             this.btnChucVu = new System.Windows.Forms.Button();
             this.btnPhongBan = new System.Windows.Forms.Button();
             this.btnTrinhDoHocVan = new System.Windows.Forms.Button();
-            this.btnTonGiao = new System.Windows.Forms.Button();
-            this.btnDanToc = new System.Windows.Forms.Button();
             this.btnDanhMuc = new System.Windows.Forms.Button();
             this.panelQuanLySubMenu = new System.Windows.Forms.Panel();
             this.btnTimKiem = new System.Windows.Forms.Button();
@@ -102,7 +100,7 @@
             this.btnHelp.ForeColor = System.Drawing.Color.Silver;
             this.btnHelp.Image = ((System.Drawing.Image)(resources.GetObject("btnHelp.Image")));
             this.btnHelp.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnHelp.Location = new System.Drawing.Point(0, 513);
+            this.btnHelp.Location = new System.Drawing.Point(0, 444);
             this.btnHelp.Name = "btnHelp";
             this.btnHelp.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
             this.btnHelp.Size = new System.Drawing.Size(250, 45);
@@ -123,7 +121,7 @@
             this.btnTaiKhoan.ForeColor = System.Drawing.Color.Silver;
             this.btnTaiKhoan.Image = ((System.Drawing.Image)(resources.GetObject("btnTaiKhoan.Image")));
             this.btnTaiKhoan.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnTaiKhoan.Location = new System.Drawing.Point(0, 468);
+            this.btnTaiKhoan.Location = new System.Drawing.Point(0, 399);
             this.btnTaiKhoan.Name = "btnTaiKhoan";
             this.btnTaiKhoan.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
             this.btnTaiKhoan.Size = new System.Drawing.Size(250, 45);
@@ -140,12 +138,10 @@
             this.panelDanhMucSubMenu.Controls.Add(this.btnChucVu);
             this.panelDanhMucSubMenu.Controls.Add(this.btnPhongBan);
             this.panelDanhMucSubMenu.Controls.Add(this.btnTrinhDoHocVan);
-            this.panelDanhMucSubMenu.Controls.Add(this.btnTonGiao);
-            this.panelDanhMucSubMenu.Controls.Add(this.btnDanToc);
             this.panelDanhMucSubMenu.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelDanhMucSubMenu.Location = new System.Drawing.Point(0, 264);
             this.panelDanhMucSubMenu.Name = "panelDanhMucSubMenu";
-            this.panelDanhMucSubMenu.Size = new System.Drawing.Size(250, 204);
+            this.panelDanhMucSubMenu.Size = new System.Drawing.Size(250, 135);
             this.panelDanhMucSubMenu.TabIndex = 4;
             // 
             // btnChucVu
@@ -156,7 +152,7 @@
             this.btnChucVu.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(38)))), ((int)(((byte)(46)))));
             this.btnChucVu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnChucVu.ForeColor = System.Drawing.Color.Silver;
-            this.btnChucVu.Location = new System.Drawing.Point(0, 160);
+            this.btnChucVu.Location = new System.Drawing.Point(0, 80);
             this.btnChucVu.Name = "btnChucVu";
             this.btnChucVu.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
             this.btnChucVu.Size = new System.Drawing.Size(250, 40);
@@ -174,7 +170,7 @@
             this.btnPhongBan.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(38)))), ((int)(((byte)(46)))));
             this.btnPhongBan.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnPhongBan.ForeColor = System.Drawing.Color.Silver;
-            this.btnPhongBan.Location = new System.Drawing.Point(0, 120);
+            this.btnPhongBan.Location = new System.Drawing.Point(0, 40);
             this.btnPhongBan.Name = "btnPhongBan";
             this.btnPhongBan.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
             this.btnPhongBan.Size = new System.Drawing.Size(250, 40);
@@ -192,7 +188,7 @@
             this.btnTrinhDoHocVan.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(38)))), ((int)(((byte)(46)))));
             this.btnTrinhDoHocVan.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnTrinhDoHocVan.ForeColor = System.Drawing.Color.Silver;
-            this.btnTrinhDoHocVan.Location = new System.Drawing.Point(0, 80);
+            this.btnTrinhDoHocVan.Location = new System.Drawing.Point(0, 0);
             this.btnTrinhDoHocVan.Name = "btnTrinhDoHocVan";
             this.btnTrinhDoHocVan.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
             this.btnTrinhDoHocVan.Size = new System.Drawing.Size(250, 40);
@@ -201,42 +197,6 @@
             this.btnTrinhDoHocVan.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnTrinhDoHocVan.UseVisualStyleBackColor = true;
             this.btnTrinhDoHocVan.Click += new System.EventHandler(this.btnTrinhDoHocVan_Click);
-            // 
-            // btnTonGiao
-            // 
-            this.btnTonGiao.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnTonGiao.FlatAppearance.BorderSize = 0;
-            this.btnTonGiao.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(38)))), ((int)(((byte)(46)))));
-            this.btnTonGiao.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(38)))), ((int)(((byte)(46)))));
-            this.btnTonGiao.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnTonGiao.ForeColor = System.Drawing.Color.Silver;
-            this.btnTonGiao.Location = new System.Drawing.Point(0, 40);
-            this.btnTonGiao.Name = "btnTonGiao";
-            this.btnTonGiao.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            this.btnTonGiao.Size = new System.Drawing.Size(250, 40);
-            this.btnTonGiao.TabIndex = 1;
-            this.btnTonGiao.Text = "Tôn giáo";
-            this.btnTonGiao.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnTonGiao.UseVisualStyleBackColor = true;
-            this.btnTonGiao.Click += new System.EventHandler(this.btnTonGiao_Click);
-            // 
-            // btnDanToc
-            // 
-            this.btnDanToc.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnDanToc.FlatAppearance.BorderSize = 0;
-            this.btnDanToc.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(38)))), ((int)(((byte)(46)))));
-            this.btnDanToc.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(38)))), ((int)(((byte)(46)))));
-            this.btnDanToc.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnDanToc.ForeColor = System.Drawing.Color.Silver;
-            this.btnDanToc.Location = new System.Drawing.Point(0, 0);
-            this.btnDanToc.Name = "btnDanToc";
-            this.btnDanToc.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            this.btnDanToc.Size = new System.Drawing.Size(250, 40);
-            this.btnDanToc.TabIndex = 0;
-            this.btnDanToc.Text = "Dân tộc";
-            this.btnDanToc.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnDanToc.UseVisualStyleBackColor = true;
-            this.btnDanToc.Click += new System.EventHandler(this.btnDanToc_Click);
             // 
             // btnDanhMuc
             // 
@@ -392,8 +352,6 @@
         private System.Windows.Forms.Panel panelDanhMucSubMenu;
         private System.Windows.Forms.Button btnPhongBan;
         private System.Windows.Forms.Button btnTrinhDoHocVan;
-        private System.Windows.Forms.Button btnTonGiao;
-        private System.Windows.Forms.Button btnDanToc;
         private System.Windows.Forms.Button btnDanhMuc;
         private System.Windows.Forms.Panel panelLogo;
         private System.Windows.Forms.Button btnExit;

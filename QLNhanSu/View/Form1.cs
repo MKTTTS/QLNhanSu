@@ -13,10 +13,15 @@ namespace View
     public partial class Form1 : Form
     {
         private string MaNV;
+        private int Level;
 
         public Form1(string mnv)
         {
             this.MaNV = mnv;
+            List<CustomerParameter> lst = new List<CustomerParameter>();
+            lst.Add(new CustomerParameter() { key = "@manhanvien", value = mnv });
+            var r = new DatabaseNV().SelectData("LEVELDANGNHAP", lst);
+            this.Level = Convert.ToInt32(r.Rows[0]["Level"].ToString());
             InitializeComponent();
             hideSubMenu();
         }
@@ -57,7 +62,7 @@ namespace View
         private void btnThongTinNhanVien_Click(object sender, EventArgs e)
         {
             hideSubMenu();
-            FormThongTinNhanVien ttnv = new FormThongTinNhanVien();
+            FormThongTinNhanVien ttnv = new FormThongTinNhanVien(this.Level);
             ttnv.TopLevel = false;
             panelChildForm.Controls.Add(ttnv);
             //ttnv.Show();
@@ -77,20 +82,12 @@ namespace View
 
         #region DanhMucSubMenu
 
-        private void btnDanToc_Click(object sender, EventArgs e)
-        {
-            hideSubMenu();
-        }
-
-        private void btnTonGiao_Click(object sender, EventArgs e)
-        {
-            hideSubMenu();
-        }
+        
 
         private void btnTrinhDoHocVan_Click(object sender, EventArgs e)
         {
             hideSubMenu();
-            Vitri vt = new Vitri();
+            Vitri vt = new Vitri(this.Level);
             vt.TopLevel = false;
             openChildForm(vt);
         }
@@ -99,7 +96,7 @@ namespace View
         {
 
             hideSubMenu();
-            PhongBan pb = new PhongBan();
+            PhongBan pb = new PhongBan(this.Level);
             pb.TopLevel = false;
             openChildForm(pb);
         }
@@ -107,6 +104,9 @@ namespace View
         private void btnChucVu_Click(object sender, EventArgs e)
         {
             hideSubMenu();
+            ChucVu cv = new ChucVu(this.Level);
+            cv.TopLevel = false;
+            openChildForm(cv);
         }
 
 
@@ -129,10 +129,13 @@ namespace View
         {
 
             hideSubMenu();
+            Help hp = new Help();
+            hp.TopLevel = false;
+            openChildForm(hp);
         }
         private void btnExit_Click(object sender, EventArgs e)
         {
-            Application.Exit();
+            this.Dispose();
         }
 
 

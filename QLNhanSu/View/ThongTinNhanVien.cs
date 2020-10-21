@@ -17,9 +17,13 @@ namespace View
     public partial class ThongTinNhanVien : Form
     { 
         private string mnv;
-        public ThongTinNhanVien(string mnv)
+        private int Level;
+        private int Object;
+        public ThongTinNhanVien(string mnv, int a, int b)
         {
             this.mnv = mnv;
+            this.Level = a;
+            this.Object = b;
             InitializeComponent();
             this.buttonLuu.Enabled = false;
             this.textBoxHoTen.Enabled = false;
@@ -33,6 +37,23 @@ namespace View
             this.comboBoxViTri.Enabled = false;
             this.textBoxdantoc.Enabled = false;
             this.textBoxtongiao.Enabled = false;
+            if(this.Level == 2 || this.Level == 3)
+            {
+                if(this.Object <= 3)
+                {
+                    this.buttonSua.Visible = false;
+                    this.buttonXoa.Visible = false;
+                    this.button1.Visible = false;
+                    this.buttonLuu.Visible = false;
+                }
+            }
+            else if(this.Level > 3)
+            {
+                this.buttonSua.Visible = false;
+                this.buttonXoa.Visible = false;
+                this.button1.Visible = false;
+                this.buttonLuu.Visible = false;
+            }
          
         }
 
@@ -41,7 +62,7 @@ namespace View
             var r = new DatabaseNV().Select("SELECTNhanVien '" + mnv + "'");
             textBoxMaNV.Text = mnv;
             textBoxHoTen.Text = r["HoTen"].ToString();
-            textBoxCMND.Text = r["CMTND"].ToString();
+            textBoxCMND.Text = "xxxxxxxxxxxx";
             textBoxSDT.Text = r["SDT"].ToString();
             textBoxDiaChi.Text = r["DiaChi"].ToString();
             maskedTextBoxNgaysinh.Text = r["NgaySinh"].ToString(); //// Convert to Date có vấn đề
@@ -50,6 +71,7 @@ namespace View
             textBoxBangCap.Text = r["BangCap"].ToString();
             this.textBoxtongiao.Text = r["TonGiao"].ToString();
             this.textBoxdantoc.Text = r["DanToc"].ToString();
+            
             this.mnv = mnv;
             string conString = ConfigurationManager.ConnectionStrings["myconnection"].ConnectionString;
             SqlConnection sqlCon = new SqlConnection(conString);
@@ -62,20 +84,44 @@ namespace View
 
             for (int i = 0; i < dt.Rows.Count; i++)
             {
-                comboboxChucVu.Items.Add(dt.Rows[i]["TenCV"]);
+                if (this.Level == 1)
+                {
+                    comboboxChucVu.Items.Add(dt.Rows[i]["TenCV"]);
+                }
+                else if(this.Level == 2 || this.Level == 3)
+                {
+                    if(dt.Rows[i]["TenCV"].ToString() != "Chủ tịch" && dt.Rows[i]["TenCV"].ToString() != "Giám đốc" && dt.Rows[i]["TenCV"].ToString() != "Phó giám đốc")
+                    {
+                        comboboxChucVu.Items.Add(dt.Rows[i]["TenCV"]);
+                    }
+                }
+                else
+                {
+                    comboboxChucVu.Items.Add(dt.Rows[i]["TenCV"]);
+                }
             }
             comboboxChucVu.Items.Add("Không");
-            comboboxChucVu.Text = r["TenCV"].ToString();
+            //comboboxChucVu.Text = r["TenCV"].ToString();
             comboBoxPhongBan.Items.Clear();
             dt.Clear();
             da = new SqlDataAdapter("SELECT * FROM PHONGBAN", sqlCon);
             da.Fill(dt);
             for (int i = 0; i < dt.Rows.Count; i++)
             {
-                comboBoxPhongBan.Items.Add(dt.Rows[i]["TenPB"]);
+                if (this.Level == 2 || this.Level == 3)
+                {
+                    if (dt.Rows[i]["TenPB"].ToString() != "Ban điều hành")
+                    {
+                        comboBoxPhongBan.Items.Add(dt.Rows[i]["TenPB"]);
+                    }
+                }
+                else
+                {
+                    comboBoxPhongBan.Items.Add(dt.Rows[i]["TenPB"]);
+                }
             }
             
-            comboBoxPhongBan.Text = r["TenPB"].ToString();
+            //comboBoxPhongBan.Text = r["TenPB"].ToString();
             comboBoxViTri.Items.Clear();
             dt.Clear();
             da = new SqlDataAdapter("SELECT * FROM VITRICONGVIEC", sqlCon);
@@ -85,8 +131,11 @@ namespace View
                 comboBoxViTri.Items.Add(dt.Rows[i]["TenVT"]);
             }
 
-            comboBoxViTri.Text = r["TenVT"].ToString();
+            //comboBoxViTri.Text = r["TenVT"].ToString();
             comboBoxViTri.Items.Add("Không");
+            comboBoxPhongBan.Text = r["TenPB"].ToString();
+            comboboxChucVu.Text = r["TenCV"].ToString();
+            comboBoxViTri.Text = r["TenVT"].ToString();
             sqlCon.Close();
         }
 
@@ -98,17 +147,17 @@ namespace View
         private void buttonSua_Click(object sender, EventArgs e)
         {
             this.buttonLuu.Enabled = true;
-            this.textBoxHoTen.Enabled = true;
-            this.comboBoxGioitinh.Enabled = true;
-            this.maskedTextBoxNgaysinh.Enabled = true;
-            this.textBoxDiaChi.Enabled = true;
-            this.textBoxSDT.Enabled = true;
+            //this.textBoxHoTen.Enabled = true;
+            //this.comboBoxGioitinh.Enabled = true;
+            //this.maskedTextBoxNgaysinh.Enabled = true;
+            //this.textBoxDiaChi.Enabled = true;
+            //this.textBoxSDT.Enabled = true;
             this.comboboxChucVu.Enabled = true;
             this.textBoxBangCap.Enabled = true;
             this.comboBoxPhongBan.Enabled = true;
             this.comboBoxViTri.Enabled = true;
-            this.textBoxdantoc.Enabled = true;
-            this.textBoxtongiao.Enabled = true;
+            //this.textBoxdantoc.Enabled = true;
+            //this.textBoxtongiao.Enabled = true;
 
         }
 
@@ -168,7 +217,7 @@ namespace View
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Hopdong hd = new Hopdong(mnv);
+            Hopdong hd = new Hopdong(mnv, this.Level, this.Object);
             hd.ShowDialog();
         }
     }

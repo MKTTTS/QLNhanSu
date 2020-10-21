@@ -14,10 +14,17 @@ namespace View
 {
     public partial class FormThongTinNhanVien : Form
     {
-        public FormThongTinNhanVien()
+        private int Level;
+        public FormThongTinNhanVien(int level)
         {
+            this.Level = level;
             InitializeComponent();
             this.radioButton1.Checked = true;
+            if(this.Level > 3)
+            {
+                this.button2.Visible = false;
+            }
+
 
         }
 
@@ -60,7 +67,11 @@ namespace View
             {
                 //MessageBox.Show(dataGridViewNhanVien.Rows[e.RowIndex].Cells["Mã nhân viên"].Value.ToString());
                 var mnv = dgvKetQua.Rows[e.RowIndex].Cells["Mã nhân viên"].Value.ToString();
-                new ThongTinNhanVien(mnv).ShowDialog();
+                List<CustomerParameter> lst = new List<CustomerParameter>();
+                lst.Add(new CustomerParameter() { key = "@manhanvien", value = mnv });
+                var r = new DatabaseNV().SelectData("LEVELDANGNHAP", lst);
+                int m = Convert.ToInt32(r.Rows[0]["Level"].ToString());
+                new ThongTinNhanVien(mnv, this.Level, m).ShowDialog();
                 LoadAgain();
             }
         }

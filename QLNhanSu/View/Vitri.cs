@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
+using System.Configuration;
 using System.Data;
 using System.Data.SqlClient;
 using System.Drawing;
@@ -14,26 +15,38 @@ namespace View
     public partial class Vitri : Form
     {
         string flag;
+        private int Level;
         SqlConnection connection;
         SqlCommand command;
-        string str = @"Data Source=.;Initial Catalog=QuanLyNhanSu;Integrated Security=True";
+        private string str = ConfigurationManager.ConnectionStrings["myconnection"].ConnectionString;
         SqlDataAdapter adapter = new SqlDataAdapter();
         System.Data.DataTable table = new System.Data.DataTable();
         void hienthi()
         {
             connection.Open();
             command = connection.CreateCommand();
-            command.CommandText = "SELECT * FROM dbo.VITRICONGVIEC";
+            command.CommandText = "SELECT MaVT as N'Mã vị trí', TenVT as N'Tên vị trí' FROM dbo.VITRICONGVIEC";
             adapter.SelectCommand = command;
             table.Clear();
             adapter.Fill(table);
             dgVT.DataSource = table;
             dgVT.ReadOnly = true;
             connection.Close();
+            this.btn_EditVT.Enabled = false;
+            this.txtMaVT.ReadOnly = true;
+            this.txtTenVT.ReadOnly = true;
         }
-        public Vitri()
+        public Vitri(int level)
         {
+            this.Level = level;
             InitializeComponent();
+            if(this.Level > 1)
+            {
+                this.btn_EditVT.Visible = false;
+                this.btn_AddVT.Visible = false;
+                this.btn_save.Visible = false;
+            }
+            
         }
 
         private void Vitri_Load(object sender, EventArgs e)
@@ -55,19 +68,13 @@ namespace View
             btn_save.Enabled = true;
         }
 
-        private void dgVT_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-            lockcontrol();
-            int i;
-            i = dgVT.CurrentRow.Index;
-            txtMaVT.Text = dgVT.Rows[i].Cells[0].Value.ToString();
-            txtTenVT.Text = dgVT.Rows[i].Cells[1].Value.ToString();
-        }
+        
 
         private void btn_AddVT_Click(object sender, EventArgs e)
         {
             unlock();
             txtMaVT.ReadOnly = false;
+            this.btn_EditVT.Enabled = false;
             flag = "add";
             txtMaVT.Text = "";
             txtTenVT.Text = "";
@@ -128,17 +135,18 @@ namespace View
                 {
                     connection.Open();
                     command = connection.CreateCommand();
-                    command.CommandText = "INSERT INTO dbo.VITRICONGVIEC (MaVT,TenVT) VALUES ('"+txtMaVT.Text+"','"+txtTenVT.Text+"')";
+                    command.CommandText = "INSERT INTO dbo.VITRICONGVIEC (MaVT,TenVT) VALUES ('"+txtMaVT.Text+"',N'"+txtTenVT.Text+"')";
                     command.ExecuteNonQuery();
                     connection.Close();
                     hienthi();
+                    this.btn_EditVT.Enabled = true;
                 }
             }
             else if(flag=="edit")
             {
                 connection.Open();
                 command = connection.CreateCommand();
-                command.CommandText = "UPDATE dbo.VITRICONGVIEC SET TenVT = '"+txtTenVT.Text+"' WHERE MaVT = '"+txtMaVT.Text+"'";
+                command.CommandText = "UPDATE dbo.VITRICONGVIEC SET TenVT = N'"+txtTenVT.Text+"' WHERE MaVT = '"+txtMaVT.Text+"'";
                 command.ExecuteNonQuery();
                 connection.Close();
                 hienthi();
@@ -148,6 +156,28 @@ namespace View
         private void button1_Click(object sender, EventArgs e)
         {
             this.Dispose();
+        }
+
+        private void dgVT_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            lockcontrol();
+            int i;
+            i = dgVT.CurrentRow.Index;
+            if (i >= 0)
+            {
+
+                var r = dgVT.Rows[i].Cells["Mã vị trí"].Value.ToString();
+                if (!string.IsNullOrEmpty(r))
+                {
+                    txtMaVT.Text = dgVT.Rows[i].Cells[0].Value.ToString();
+                    txtTenVT.Text = dgVT.Rows[i].Cells[1].Value.ToString();
+                    this.btn_EditVT.Enabled = true;
+                }
+                else
+                {
+                    this.btn_EditVT.Enabled = false;
+                }
+            }
         }
     }
 }

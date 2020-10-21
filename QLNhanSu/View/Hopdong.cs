@@ -14,9 +14,13 @@ namespace View
     public partial class Hopdong : Form
     {
         private string manv;
-        public Hopdong(string mnv)
+        private int Level;
+        private int Object;
+        public Hopdong(string mnv, int a, int b)
         {
             this.manv = mnv;
+            this.Level = a;
+            this.Object = b;
             InitializeComponent();
             this.comboBoxHopDong.Enabled = false;
             this.textBoxHoTen.Enabled = false;
@@ -25,6 +29,17 @@ namespace View
             this.maskedTextBoxNgaysinh.Enabled = false;
             this.maskedTextBoxNgayky.Enabled = false;
             this.maskedTextBoxNgayhethan.Enabled = false;
+            if(Level == 2 || Level == 3)
+            {
+                if(this.Object == 1 || this.Object == 2 || this.Object == 3)
+                {
+                    this.buttonSua.Enabled = false;
+                }
+            }
+            else
+            {
+
+            }
         }
 
         private void buttonXoa_Click(object sender, EventArgs e)

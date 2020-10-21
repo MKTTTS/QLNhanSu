@@ -12,8 +12,10 @@ namespace View
 {
     public partial class PhongBan : Form
     {
-        public PhongBan()
+        private int Level;
+        public PhongBan(int level)
         {
+            this.Level = level;
             InitializeComponent();
             this.textBoxDiaChiPB.Enabled = false;
             this.textBoxMaPB.Enabled = false;
@@ -21,6 +23,11 @@ namespace View
             this.textBoxMaTP.Enabled = false;
             this.textBoxTenTP.Enabled = false;
             this.buttonSua.Enabled = false;
+            if(this.Level > 1)
+            {
+                this.buttonSua.Visible = false;
+                this.buttonThem.Visible = false;
+            }
        
         }
         private void LoadAgain()
@@ -60,9 +67,17 @@ namespace View
                     {
                         this.textBoxMaTP.Text = r["MaTP"].ToString();
                     }
+                    else
+                    {
+                        this.textBoxMaTP.Text = "";
+                    }
                     if (!string.IsNullOrEmpty(r["TenTP"].ToString()))
                     {
                         this.textBoxTenTP.Text = r["TenTP"].ToString();
+                    }
+                    else
+                    {
+                        this.textBoxTenTP.Text = "";
                     }
                     this.buttonSua.Enabled = true;
                 }
