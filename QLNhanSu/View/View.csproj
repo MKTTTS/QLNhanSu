@@ -55,11 +55,11 @@
       <DependentUpon>ChucVu.cs</DependentUpon>
     </Compile>
     <Compile Include="CustomerParameter.cs" />
-    <Compile Include="DanToc.cs">
+    <Compile Include="DanhSachLuong.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="DanToc.Designer.cs">
-      <DependentUpon>DanToc.cs</DependentUpon>
+    <Compile Include="DanhSachLuong.Designer.cs">
+      <DependentUpon>DanhSachLuong.cs</DependentUpon>
     </Compile>
     <Compile Include="DoiMatKhau.cs">
       <SubType>Form</SubType>
@@ -130,24 +130,6 @@
     <Compile Include="TimKiemNhanVien.Designer.cs">
       <DependentUpon>TimKiemNhanVien.cs</DependentUpon>
     </Compile>
-    <Compile Include="TonGiao.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="TonGiao.Designer.cs">
-      <DependentUpon>TonGiao.cs</DependentUpon>
-    </Compile>
-    <Compile Include="TrinhDoHocVan.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="TrinhDoHocVan.Designer.cs">
-      <DependentUpon>TrinhDoHocVan.cs</DependentUpon>
-    </Compile>
-    <Compile Include="TrinhDoTiengAnh.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="TrinhDoTiengAnh.Designer.cs">
-      <DependentUpon>TrinhDoTiengAnh.cs</DependentUpon>
-    </Compile>
     <Compile Include="XoaNhanVien.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -163,8 +145,8 @@
     <EmbeddedResource Include="ChucVu.resx">
       <DependentUpon>ChucVu.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="DanToc.resx">
-      <DependentUpon>DanToc.cs</DependentUpon>
+    <EmbeddedResource Include="DanhSachLuong.resx">
+      <DependentUpon>DanhSachLuong.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="DoiMatKhau.resx">
       <DependentUpon>DoiMatKhau.cs</DependentUpon>
@@ -208,15 +190,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="TimKiemNhanVien.resx">
       <DependentUpon>TimKiemNhanVien.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="TonGiao.resx">
-      <DependentUpon>TonGiao.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="TrinhDoHocVan.resx">
-      <DependentUpon>TrinhDoHocVan.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="TrinhDoTiengAnh.resx">
-      <DependentUpon>TrinhDoTiengAnh.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="XoaNhanVien.resx">
       <DependentUpon>XoaNhanVien.cs</DependentUpon>

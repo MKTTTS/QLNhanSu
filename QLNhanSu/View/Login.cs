@@ -24,12 +24,23 @@ namespace View
             check = BUS_Login.Instance.CheckLogin((Object)tenDangNhap_txb.Text, (Object)matKhau_txb.Text);
             if (check == "1")
             {
-                this.Hide();
+                
                 List<CustomerParameter> lst = new List<CustomerParameter>();
-                string mnv = this.tenDangNhap_txb.Text;
-                Form1 fm = new Form1(mnv);
-                fm.ShowDialog();
-                this.Close();
+                lst.Add(new CustomerParameter() { key = "@manhanvien", value = this.tenDangNhap_txb.Text });
+                var r = new DatabaseNV().SelectData("CHECKHOPDONG", lst);
+                int n = Convert.ToInt32(r.Rows[0]["TrangThai"].ToString());
+                if (n == 1)
+                {
+                    this.Hide();
+                    string mnv = this.tenDangNhap_txb.Text;
+                    Form1 fm = new Form1(mnv);
+                    fm.ShowDialog();
+                    this.Close();
+                }
+                else
+                {
+                    MessageBox.Show("Hợp đồng của bạn đã hết hạn!");
+                }
             }
             else
             {

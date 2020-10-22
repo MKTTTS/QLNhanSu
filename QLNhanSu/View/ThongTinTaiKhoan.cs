@@ -32,6 +32,7 @@ namespace View
             this.tenCVTextBox.Enabled = false;
             this.tenPBTextBox.Enabled = false;
             this.tongLuongTextBox.Enabled = false;
+            this.cMTNDTextBox.Enabled = false;
         }
 
         void disableComponent()
@@ -51,6 +52,7 @@ namespace View
             }
             xong_btn.Show();
             this.bangCapTextBox.Enabled = false;
+            this.cMTNDTextBox.Enabled = false;
         }
         private void Loadt(string MaNV)
         {

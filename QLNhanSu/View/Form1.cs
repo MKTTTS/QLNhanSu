@@ -156,6 +156,12 @@ namespace View
             childForm.Show();
         }
 
-
+        private void button1_Click(object sender, EventArgs e)
+        {
+            hideSubMenu();
+            DanhSachLuong dsl = new DanhSachLuong(this.MaNV, this.Level);
+            dsl.TopLevel = false;
+            openChildForm(dsl);
+        }
     }
 }

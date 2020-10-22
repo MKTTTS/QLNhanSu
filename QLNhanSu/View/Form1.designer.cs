@@ -45,6 +45,7 @@
             this.panelLogo = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.panelChildForm = new System.Windows.Forms.Panel();
+            this.button1 = new System.Windows.Forms.Button();
             this.panelSideMenu.SuspendLayout();
             this.panelDanhMucSubMenu.SuspendLayout();
             this.panelQuanLySubMenu.SuspendLayout();
@@ -100,7 +101,7 @@
             this.btnHelp.ForeColor = System.Drawing.Color.Silver;
             this.btnHelp.Image = ((System.Drawing.Image)(resources.GetObject("btnHelp.Image")));
             this.btnHelp.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnHelp.Location = new System.Drawing.Point(0, 444);
+            this.btnHelp.Location = new System.Drawing.Point(0, 488);
             this.btnHelp.Name = "btnHelp";
             this.btnHelp.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
             this.btnHelp.Size = new System.Drawing.Size(250, 45);
@@ -121,7 +122,7 @@
             this.btnTaiKhoan.ForeColor = System.Drawing.Color.Silver;
             this.btnTaiKhoan.Image = ((System.Drawing.Image)(resources.GetObject("btnTaiKhoan.Image")));
             this.btnTaiKhoan.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnTaiKhoan.Location = new System.Drawing.Point(0, 399);
+            this.btnTaiKhoan.Location = new System.Drawing.Point(0, 443);
             this.btnTaiKhoan.Name = "btnTaiKhoan";
             this.btnTaiKhoan.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
             this.btnTaiKhoan.Size = new System.Drawing.Size(250, 45);
@@ -135,13 +136,14 @@
             // panelDanhMucSubMenu
             // 
             this.panelDanhMucSubMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(32)))), ((int)(((byte)(39)))));
+            this.panelDanhMucSubMenu.Controls.Add(this.button1);
             this.panelDanhMucSubMenu.Controls.Add(this.btnChucVu);
             this.panelDanhMucSubMenu.Controls.Add(this.btnPhongBan);
             this.panelDanhMucSubMenu.Controls.Add(this.btnTrinhDoHocVan);
             this.panelDanhMucSubMenu.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelDanhMucSubMenu.Location = new System.Drawing.Point(0, 264);
             this.panelDanhMucSubMenu.Name = "panelDanhMucSubMenu";
-            this.panelDanhMucSubMenu.Size = new System.Drawing.Size(250, 135);
+            this.panelDanhMucSubMenu.Size = new System.Drawing.Size(250, 179);
             this.panelDanhMucSubMenu.TabIndex = 4;
             // 
             // btnChucVu
@@ -316,6 +318,24 @@
             this.panelChildForm.Size = new System.Drawing.Size(1112, 671);
             this.panelChildForm.TabIndex = 2;
             // 
+            // button1
+            // 
+            this.button1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(38)))), ((int)(((byte)(46)))));
+            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(38)))), ((int)(((byte)(46)))));
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.ForeColor = System.Drawing.Color.Silver;
+            this.button1.Location = new System.Drawing.Point(0, 120);
+            this.button1.Name = "button1";
+            this.button1.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
+            this.button1.Size = new System.Drawing.Size(250, 40);
+            this.button1.TabIndex = 5;
+            this.button1.Text = "Lương";
+            this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 20F);
@@ -358,6 +378,7 @@
         private System.Windows.Forms.Panel panelChildForm;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnChucVu;
+        private System.Windows.Forms.Button button1;
     }
 }
 

@@ -204,6 +204,7 @@ namespace View
                 }
 
             }
+            sqlCon.Close();
         }
 
         private void comboBox1_TextChanged(object sender, EventArgs e)
@@ -404,6 +405,7 @@ namespace View
             {
                 comboBoxViTri.Items.Clear();
             }
+            sqlCon.Close();
         }
     }
     }

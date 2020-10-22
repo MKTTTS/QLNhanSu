@@ -53,10 +53,10 @@
             this.dgvKetQua.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.dgvKetQua.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvKetQua.Location = new System.Drawing.Point(28, 235);
-            this.dgvKetQua.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dgvKetQua.Margin = new System.Windows.Forms.Padding(4);
             this.dgvKetQua.Name = "dgvKetQua";
             this.dgvKetQua.RowHeadersWidth = 51;
-            this.dgvKetQua.Size = new System.Drawing.Size(1000, 459);
+            this.dgvKetQua.Size = new System.Drawing.Size(1000, 432);
             this.dgvKetQua.TabIndex = 0;
             // 
             // label1
@@ -78,7 +78,7 @@
             "Phòng Ban",
             "Địa Chỉ"});
             this.cbxTieuChi.Location = new System.Drawing.Point(135, 39);
-            this.cbxTieuChi.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cbxTieuChi.Margin = new System.Windows.Forms.Padding(4);
             this.cbxTieuChi.Name = "cbxTieuChi";
             this.cbxTieuChi.Size = new System.Drawing.Size(145, 24);
             this.cbxTieuChi.TabIndex = 2;
@@ -89,7 +89,7 @@
             this.btnTKTieuChi.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(32)))), ((int)(((byte)(39)))));
             this.btnTKTieuChi.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnTKTieuChi.Location = new System.Drawing.Point(309, 63);
-            this.btnTKTieuChi.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnTKTieuChi.Margin = new System.Windows.Forms.Padding(4);
             this.btnTKTieuChi.Name = "btnTKTieuChi";
             this.btnTKTieuChi.Size = new System.Drawing.Size(100, 28);
             this.btnTKTieuChi.TabIndex = 5;
@@ -118,9 +118,9 @@
             this.groupBox1.Controls.Add(this.btnTKTieuChi);
             this.groupBox1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.groupBox1.Location = new System.Drawing.Point(28, 28);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(4);
             this.groupBox1.Size = new System.Drawing.Size(460, 161);
             this.groupBox1.TabIndex = 9;
             this.groupBox1.TabStop = false;
@@ -131,7 +131,7 @@
             this.cbxDeMuc.FormattingEnabled = true;
             this.cbxDeMuc.IntegralHeight = false;
             this.cbxDeMuc.Location = new System.Drawing.Point(135, 87);
-            this.cbxDeMuc.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cbxDeMuc.Margin = new System.Windows.Forms.Padding(4);
             this.cbxDeMuc.Name = "cbxDeMuc";
             this.cbxDeMuc.Size = new System.Drawing.Size(145, 24);
             this.cbxDeMuc.TabIndex = 8;
@@ -146,9 +146,9 @@
             this.groupBox2.Controls.Add(this.btnTKTenMaNV);
             this.groupBox2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.groupBox2.Location = new System.Drawing.Point(560, 28);
-            this.groupBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox2.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox2.Padding = new System.Windows.Forms.Padding(4);
             this.groupBox2.Size = new System.Drawing.Size(468, 161);
             this.groupBox2.TabIndex = 10;
             this.groupBox2.TabStop = false;
@@ -159,7 +159,7 @@
             this.cbMaNV.AutoSize = true;
             this.cbMaNV.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.cbMaNV.Location = new System.Drawing.Point(23, 90);
-            this.cbMaNV.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cbMaNV.Margin = new System.Windows.Forms.Padding(4);
             this.cbMaNV.Name = "cbMaNV";
             this.cbMaNV.Size = new System.Drawing.Size(119, 21);
             this.cbMaNV.TabIndex = 11;
@@ -172,7 +172,7 @@
             this.cbHoTen.AutoSize = true;
             this.cbHoTen.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.cbHoTen.Location = new System.Drawing.Point(23, 49);
-            this.cbHoTen.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cbHoTen.Margin = new System.Windows.Forms.Padding(4);
             this.cbHoTen.Name = "cbHoTen";
             this.cbHoTen.Size = new System.Drawing.Size(77, 21);
             this.cbHoTen.TabIndex = 10;
@@ -184,7 +184,7 @@
             // 
             this.txtMaNV.Enabled = false;
             this.txtMaNV.Location = new System.Drawing.Point(156, 87);
-            this.txtMaNV.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtMaNV.Margin = new System.Windows.Forms.Padding(4);
             this.txtMaNV.Multiline = true;
             this.txtMaNV.Name = "txtMaNV";
             this.txtMaNV.Size = new System.Drawing.Size(149, 25);
@@ -194,7 +194,7 @@
             // 
             this.txtTen.Enabled = false;
             this.txtTen.Location = new System.Drawing.Point(113, 46);
-            this.txtTen.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtTen.Margin = new System.Windows.Forms.Padding(4);
             this.txtTen.Multiline = true;
             this.txtTen.Name = "txtTen";
             this.txtTen.Size = new System.Drawing.Size(192, 24);
@@ -205,7 +205,7 @@
             this.btnTKTenMaNV.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(32)))), ((int)(((byte)(39)))));
             this.btnTKTenMaNV.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnTKTenMaNV.Location = new System.Drawing.Point(333, 63);
-            this.btnTKTenMaNV.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnTKTenMaNV.Margin = new System.Windows.Forms.Padding(4);
             this.btnTKTenMaNV.Name = "btnTKTenMaNV";
             this.btnTKTenMaNV.Size = new System.Drawing.Size(100, 28);
             this.btnTKTenMaNV.TabIndex = 5;
@@ -223,7 +223,7 @@
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.dgvKetQua);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "TimKiemNhanVien";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "TimKiemNhanVien";
