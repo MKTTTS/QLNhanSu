@@ -15,6 +15,7 @@ namespace View
     {
         List<Control> listOfControl = new List<Control>();
         private string MaNV;
+        private string SoCMND;
         public ThongTinTaiKhoan(string mnv)
         {
             this.MaNV = mnv;
@@ -52,7 +53,7 @@ namespace View
             }
             xong_btn.Show();
             this.bangCapTextBox.Enabled = false;
-            this.cMTNDTextBox.Enabled = false;
+            //this.cMTNDTextBox.Enabled = false;
         }
         private void Loadt(string MaNV)
         {
@@ -63,6 +64,7 @@ namespace View
         {
             Loadt(this.MaNV);
             disableComponent();
+            this.SoCMND = this.cMTNDTextBox.Text;
         }
 
         private void chinhSua_btn_Click(object sender, EventArgs e)
@@ -102,7 +104,7 @@ namespace View
         }
         private void xong_btn_Click(object sender, EventArgs e)
         {
-            if(CheckCMND(this.cMTNDTextBox.Text) == false)
+            if(CheckCMND(this.cMTNDTextBox.Text) == false && this.SoCMND != this.cMTNDTextBox.Text)
             {
                 MessageBox.Show("Số chứng minh nhân dân không hợp lệ");
                 return;
